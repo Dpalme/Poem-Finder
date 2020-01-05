@@ -38,6 +38,7 @@ h3 {
 p {
     line-height: 2rem;
     display: block;
+    margin: auto;
 }
 
 div {
