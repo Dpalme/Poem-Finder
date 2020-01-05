@@ -10,7 +10,14 @@
 </head>
 <body>
     <h1>Random Poem</h1>
-    <button onclick="new_poem()">New Poem</button>
+    <div>
+        <button onclick="new_poem()">New Poem</button>
+        <select id="select">
+            <option value="ANY">Any</option>
+            <option value="ES">Spanish</option>
+            <option value="EN">English</option>
+          </select>
+    </div>
     <div id="content"></div>
 </body>
 <script type="text/javascript" src="js/main.js"></script>

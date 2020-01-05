@@ -1,3 +1,4 @@
+var select = document.getElementById("select");
 var author_tag = document.createElement("h2");
 var title_tag = document.createElement("h3");
 var text_tag = document.createElement("p");
@@ -8,7 +9,12 @@ document.getElementById("content").appendChild(text_tag);
 
 function new_poem(){
     var poem = poems[Math.round(Math.random() * poems.length)];
-    author_tag.innerText = poem.get_author();
-    title_tag.innerText = poem.get_title();
-    text_tag.innerText = poem.get_text();
+    if(select.value == poem.get_language() || select.value == "ANY") {
+        author_tag.innerText = poem.get_author();
+        title_tag.innerText = poem.get_title();
+        text_tag.innerText = poem.get_text();
+    }
+    else {
+        new_poem();
+    }
 }
