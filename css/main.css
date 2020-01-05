@@ -20,8 +20,9 @@ h1 {
 }
 
 button, select {
-    display: inline;
+    display: block;
     margin: auto;
+    margin: 1vw auto;
 }
 
 h2, h3 {
