@@ -149,18 +149,20 @@ create_poem(tino, "Narciso", "Debería empezar con las equivocaciones\nLas que h
 create_poem(tino, "Leben", "Te voy a respetar, te voy a amar toda la vida, ma'\nTe debo tanto, has sido real toda la vida, ma'\nDónde estés yo voy a estar toda la vida, ma'\nY cuando ya no estes te voy a extrañar toda la vida, ma'\nMe ayudaste a ver que algo andaba mal con mi vida, ma'\nNo sé que hacer, no quiero estar mal toda la vida, ma'\nTú me criaste pa' irmelo a buscar todo en la vida, ma'\nTambién me enseñaste a nunca juzgar na' en la vida, ma'\nMe esfuerzo un buen, he sido capaz toda la vida, ma'\nMe siento bien fucking raps toda la vida, ma'\nVoy a a cargar en la espalda la cruz toda la vida, ma'\nY voy a dar la cara por el crew toda la vida, ma'\nIt's all good toda la vida, ma'\nHe sido cool, seré cool toda la vida, ma'\n¿Qué hay de ti, qué haces tú, que tal tu vida ma'?\nRetumba tu voz en mi latitud, no se me olvida na'\nTe quiero un chingo, le hablo luego tengo prisa, ma'\nVoy a sembrar luego a regar muchas sonrisas, ma'\nLe voy a poner amor a cada cosa ya lo dijo, ma'\nAy va esta pa' que se sienta orgullosa de su hijo, ma'\nEra un ciclo, ma'\nY un chingo de síntomas\nPara que andes tranquila, llevo un chingo sin tomar\nPorque no hay jefa más chida que la que vive en el uno\nNueve, siete, seis interior ocho al sur de la ciudad, ah\nQuisiera tener la misma edad toda la vida, ma'\nIgual llevármela relax toda la vida, ma'\nY cuando me harte de despuntar ahí les va\nOtra saga que lo acabo de pensar toda la vida, ma'\nLlevo ocultando este dolor toda la vida, ma'\nY me he hecho solo alguien mejor toda la vida, na'\nBajo tu protección no falto abrigo\nNi a quien admirar, no se diga más (¿Qué?)\nSí, pero no estoy listo para darte nietos todavía, ma'\nY créeme que cuando llegue el día\nVan a amarte igual que yo, todavía más\nMadre, te amo como haría un ladrón\nComo sana el dolor\nComo se ama a la luna\nTraté de hallar una pizca de maldad\nEn toda tu extensión y no encontré ninguna\nMadre eres bella y con ostentación\nComo se abre una flor, como la puesta al sol\nY hay tantas artes en tu corazón, obvio tú igual que yo\nSabías que el tiempo me daría la razón\n");
 create_poem(tino, "La asimetría según Cardín", "¿Por qué no hablamos de amor?\nTe conocí cuando estaba en la escuela\nTenías los libros de Patti Smith\nY la pic de Goodfellas\nMe daba lo mismo quedarme o salir\nNo sabía lo que era esperar la quincena\nTodo era el recreo, galletas de Ritz\nNunca imagine que esto haría que te duela\nMe acuerdo que decía “no me pela”\nLuego le chingué tres meses y me fui a Venezuela\nPara cuando regresé me sentía en punto y on fire\nLuego te vi nuevamente y fui ese puto desastre\nPero hay que hablar de ti\nTú eras fiestera y directa\nTomándote a la ligera la mierda que te afecta\nPero siempre transparente y linda\nYou know how, se enciende y brinda\nNi Mao Tse-Tung\nNi Hare Krishna\nSólo sal del búnker y te vas de pinta\nLuego fueron varias madres distintas\nSiempre fui desaliñado y de repente me miras\nY el pinche freak que armó el curso extraescolar de filosofía\nY ahí fue cuando entendí dónde tenía que estar to' los días\nSupongo que la química se dio\nY que nuestras pláticas casi eran prácticas de terror\nY cuando me llevaste al cantón pa’ decirme que esa era mi casa\nMiré al cielo y le dije a Dios ¿Qué pasa?\n\nI don't need good luck\nI don't give a fuck\nTell me what you'd say\nHopefully someday i will, think about it\n\nMe acuerdo que me veía fijamente al espejo como ¿Me estoy cogiendo a esta morra que está hermosa y es listísima, wey?\nTratando de tomar la actitud así como, en realidad me sentía contento y se que tú también ¿Sabes?\nMe acuerdo que nos enamoramos y tu llevabas como un año sin decirlo, y fuimos a la playa, eso estuvo chida, y luego me caí de la azotea, eso estuvo de la verga\n\n¿Por qué dijimos adiós?\n¿Por qué no hablamos de todo eso?\nNo sé, teniendo sexo me siento más honesto\nTambién prefiero hacerlo a caernos beso a beso\nY haberte dejado ir hasta la fecha no lo doy por hecho\nLo intentamos y chambeé de lavaplatos\nLuego la cagamos y lo recicle en mis garabatos\nSe han ido los años bajo citas de Bolaño\nY no es que esté desolado\nSólo algo triste por algo…\nY al menos sé que no fue falta de amor\nPero vivir es algo que aún nos falta a los dos\n\nDe vez en cuando tendrías que hacerlo\nSoplarle al viento y llorarle al mar\nNo me arrepiento de haberlo hecho\nDe estar contento y sentirme mal\n¿Te has preguntado cómo me siento de estar consciente de que ya no estás?\nUn poco más fuerte y hasta acostumbrado\nYa que no di siempre lo que tu si das\nDe vez en cuando tendrías que hacerlo\nSoplarle al viento y llorarle al mar\nNo me arrepiento de haberlo hecho\nDe estar contento y sentirme mal\n¿Te has preguntado cómo me siento de estar consciente de que ya no estás?\nPues un poco cursi pero acostumbrado\nPorque yo sí te di lo que tú jamás\n");
 
-var language_select = document.getElementById("language");
-var author_select = document.getElementById("authors");
-var author_tag = document.createElement("h2");
-var title_tag = document.createElement("h3");
-var text_tag = document.createElement("p");
+function start(){
+    var language_select = document.getElementById("language");
+    var author_select = document.getElementById("authors");
+    var author_tag = document.createElement("h2");
+    var title_tag = document.createElement("h3");
+    var text_tag = document.createElement("p");
 
-authors.forEach(element => {author_select.appendChild(create_option(element.name))})
-author_tag.innerText = "Number of authors: " + authors.length;
-text_tag.innerText = "Number of poems: " + poems.length;
-document.getElementById("content").appendChild(author_tag);
-document.getElementById("content").appendChild(title_tag);
-document.getElementById("content").appendChild(text_tag);
+    authors.forEach(element => {author_select.appendChild(create_option(element.name))})
+    author_tag.innerText = "Number of authors: " + authors.length;
+    text_tag.innerText = "Number of poems: " + poems.length;
+    document.getElementById("content").appendChild(author_tag);
+    document.getElementById("content").appendChild(title_tag);
+    document.getElementById("content").appendChild(text_tag);
+}
 
 function new_poem(){
     var poem = poems[Math.floor(Math.random() * poems.length)];
