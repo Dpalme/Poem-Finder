@@ -40,4 +40,7 @@ for n, flag in enumerate(poem_flags):
         master_string += clean_lines(lines[flag:])
     master_string += "\n"
 
-pyperclip.copy(master_string)
+with open("js/poem_base.js", "w", encoding="UTF-8") as archivo:
+    archivo.write(master_string)
+
+# pyperclip.copy(master_string)
