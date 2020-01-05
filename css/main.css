@@ -49,6 +49,6 @@ div {
 
 @media screen and (max-width: 800px) {
     p {
-        width: 100%;
+        width: 90%;
     }
 }
