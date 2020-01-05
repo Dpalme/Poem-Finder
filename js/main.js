@@ -1,5 +1,14 @@
 let poems = [];
 
+let authors = [];
+
+function create_option(value){
+    var main = document.createElement("option");
+    main.setAttribute("value", value);
+    main.innerText = value;
+    return main;
+}
+
 class Poem{
     constructor(author, name, text){
         this.author = author.name;
@@ -33,16 +42,36 @@ class Poem{
     }
 }
 
+function create_poem(author, name, text){
+    var poem = new Poem(author, name, text);
+    author.add_poem(poem);
+    poems.push(poem.get_poem());
+}
+
 class Author{
+    poems_by = [];
+
     constructor(name, language){
         this.name = name;
         this.language = language;
+        authors.push(this);
     }
-}
 
-function create_poem(author, name, text){
-    var poem = new Poem(author, name, text);
-    poems.push(poem.get_poem());
+    add_poem(poem){
+        this.poems_by.push(poem);
+    }
+
+    get_poem(){
+        return this.poems_by[Math.floor(Math.random()*this.poems_by.length)]
+    }
+
+    is_author(author_name){
+        return author_name == this.name;
+    }
+    
+    to_string(){
+        return this.name + ", " + this.language;
+    }
 }
 
 
@@ -79,29 +108,49 @@ machado = new Author("Antonio Machado", "ES");
 create_poem(machado, "Tus ojos me recuerdan", "Tus ojos me recuerdan\nlas noches de verano,\nnegra noche sin luna,\norilla al mar salado,\ny un chispear de estrellas\nde un cielo negro y bajo.\nTus ojos me recuerdan\nlas noches de verano.\nY tu morena cara,\nlos trigos requemados\nde un suspirar de fuego\nde los maduros campos.\n\nTus ojos me recuerdan\nlas noches de verano.\n\nDe tu morena cara,\nde tu soñar gitano,\nde tu mirar de sombra\nquiero llenar mi vaso.\nMe embriagaré una noche\nde un cielo negro y bajo,\npara cantar contigo,\norilla al mar salado,\nuna canción que deje\ncenizas en los labios...\nDe tu mirar de sombra\nquiero llenar mi vaso.\n\nTus ojos me recuerdan\nlas noches de verano.");
 create_poem(machado, "Dice la esperanza: un día", "Dice la esperanza: un día\nla verás, si bien esperas.\nDice la desesperanza:\nsólo tu amargura es ella.\nLate, corazón... No todo\nse lo ha tragado la tierra.");
 
+ashauri = new Author("Ashauri", "ES");
+create_poem(ashauri, "Pinche Loca - GODSPEED", "pinche loca\nme das un chingo de miedo\nme sacas papalotes del pecho\nqué será\nde todos los mensajes de amor\nque mandé antes de ver tu rostro enfermo\nlleno de ideas\nfuturos infiernos\nqué será\nde mis siguientes novias\ncuando entiendan que nada puede superar\ncómo me montas cuando cogemos\nquiero morir escuchando\nlo que te cuentan\nlas voces en tu cabeza\nya no me interesa\nel mundo en el que crecí\nquiero vivir\nen tus ideas pendejas\ny escuchar cómo no entiendes\nque nos estamos enamorando\nmientras cuentas anécdotas que no sucedieron\nmientras interrumpes nuestros besos\npara reclamarle a gente que no existe\nme das un chingo de miedo\nme sacas papalotes del pecho\nquiero que hoy me enloquezcas\nhasta que sólo pueda regresar\na donde estás\npara romper la ventana\ntaparte la boca\nllevarte por una nieve\ny gritarle al nevero\nella es\nla pinche loca de mi vida\ny no la entiendo\nsólo quiero verla sonriendo\nhoy me voy a casar contigo\naunque corra el peligro\nde que me asesines con tus besos\nque hacen olvidar el tiempo\nhoy me voy a casar contigo\naunque la tendencia mundial\nsea morir sin acompañante\nhoy me voy a casar contigo\naunque tenga que amarrarte\npara que no te hagas más daño\naunque me escupas\nlas pastillas llenas de palabras amorosas\nque te doy cuando no te calmas\nme cuesta decirlo\npero quiero dejar de entender el universo\ncontigo\nquiero cambiar las reglas de la realidad\ncontigo\nquiero caminar durante el otoño en la ciudad\ny gritar\nque una pinche loca me persigue\nque es lo mejor que me pudo pasar\nme das un chingo de miedo\nme sacas papalotes del pecho\nya no visitaré a mi familia\nya no le contestaré a mis amigos\nme iré contigo a un cuarto\npara hablar con las paredes\npara pelear por cosas que no pasaron\npara ver cómo se funden los focos\npara besarnos y entender que los locos\nsólo nos podemos amar entre nosotros");
+
 bukowski = new Author("Charles Bukowski", "EN");
 create_poem(bukowski, "The Japanese Wife", "O lord, he said, Japanese women,\nreal women, they have not forgotten,\nbowing and smiling\nclosing the wounds men have made;\nbut American women will kill you like they\ntear a lampshade,\nAmerican women care less than a dime,\nthey’ve gotten derailed,\nthey’re too nervous to make good:\nalways scowling, belly-aching,\ndisillusioned, overwrought;\nbut oh lord, say, the Japanese women:\nthere was this one,\nI came home and the door was locked\nand when I broke in she broke out the bread knife\nand chased me under the bed\nand her sister came\nand they kept me under that bed for two days,\nand when I came out, at last,\nshe didn’t mention attorneys,\njust said, you will never wrong me again,\nand I didn’t; but she died on me,\nand dying, said, you can wrong me now,\nand I did,\nbut you know, I felt worse then\nthan when she was living;\nthere was no voice, no knife,\nnothing but little Japanese prints on the wall,\nall those tiny people sitting by red rivers\nwith flying green birds,\nand I took them down and put them face down\nin a drawer with my shirts,\nand it was the first time I realized\nthat she was dead, even though I buried her;\nand someday I’ll take them all out again,\nall the tan-faced little people\nsitting happily by their bridges and huts\nand mountains—\nbut not right now,\nnot just yet.");
 create_poem(bukowski, "A Not So Good Night In The San Pedro Of The World", "it's unlikely that a decent poem is in me\ntonight\nand I understand that this is strictly my\nproblem\nand of no interest to you\nthat I sit here listening to a man playing\na piano on the radio\nand it's bad piano, both the playing and\nthe composition\nand again, this is of no interest to you\nas one of my cats,\na beautiful white with strange markings,\nsleeps in the bathroom.\n\n\nI have no ideas of what would be of interest to you\nbut I doubt that you would be of\ninterest to me, so don't get\nsuperior.\nin fact, come to think of it, you can\nkiss my ass.\n\nI continue to listen to the piano\nthis will not be a memorable night in my\nlife or yours.\n\nlet us celebrate the stupidity of our\nendurance.");
-create_poem(bukowski, "i wanted to overthrow the government but all i brought down was somebody's wife", "30 dogs, 20 men on 20 horses and one fox\nand look here, they write,\nyou are a dupe for the state, the church,\nyou are in the ego-dream,\nread your history, study the monetary system,\nnote that the racial war is 23,000 years old.\n\nwell, I remember 20 years ago, sitting with an old Jewish tailor,\nhis nose in the lamplight like a cannon sighted on the enemy; and\nthere was an Italian pharmacist who lived in an expensive apartment\nin the best part of town; we plotted to overthrow\na tottering dynasty, the tailor sewing buttons on a vest,\nthe Italian poking his cigar in my eye, lighting me up,\na tottering dynasty myself, always drunk as possible,\nwell-read, starving, depressed, but actually\na good young piece of ass would have solved all my rancor,\nbut I didn’t know this; I listened to my Italian and my Jew\nand I went out down dark alleys smoking borrowed cigarettes\nand watching the backs of houses come down in flames,\nbut somewhere we missed: we were not men enough,\n       large or small enough,\nor we only wanted to talk or we were bored, so the anarchy\n       fell through,\nand the Jew died and the Italian grew angry because I stayed\n       with his\nwife when he went down to the pharmacy; he did not care to have\nhis personal government overthrown, and she overthrew easy, and\nI had some guilt: the children were asleep in the other bedroom\nbut later I won $200 in a crap game and took a bus to New Orleans\nand I stood on the corner listening to the music coming from bars\nand then I went inside to the bars,\nand I sat there thinking about the dead Jew,\nhow all he did was sew on buttons and talk,\nand how he gave way although he was stronger than any of us\nhe gave way because his bladder would not go on,\nand maybe that saved Wall Street and Manhattan\nand the Church and Central Park West and Rome and the\nLeft Bank, but the pharmacist’s wife, she was nice,\nshe was tired of bombs under the pillow and hissing the Pope,\nand she had a very nice figure, very good legs,\nbut I guess she felt as I: that the weakness was not Government\nbut Man, one at a time, that men were never as strong as\n       their ideas\nand that ideas were governments turned into men;\nand so it began on a couch with a spilled martini\nand it ended in the bedroom: desire, revolution,\nnonsense ended, and the shades rattled in the wind,\nrattled like sabers, cracked like cannon,\nand 30 dogs, 20 men on 20 horses chased one fox\nacross the fields under the sun,\nand I got out of bed and yawned and scratched my belly\nand knew that soon      very soon      I would have to get\nvery drunk      again.")
+create_poem(bukowski, "i wanted to overthrow the government but all i brought down was somebody's wife", "30 dogs, 20 men on 20 horses and one fox\nand look here, they write,\nyou are a dupe for the state, the church,\nyou are in the ego-dream,\nread your history, study the monetary system,\nnote that the racial war is 23,000 years old.\n\nwell, I remember 20 years ago, sitting with an old Jewish tailor,\nhis nose in the lamplight like a cannon sighted on the enemy; and\nthere was an Italian pharmacist who lived in an expensive apartment\nin the best part of town; we plotted to overthrow\na tottering dynasty, the tailor sewing buttons on a vest,\nthe Italian poking his cigar in my eye, lighting me up,\na tottering dynasty myself, always drunk as possible,\nwell-read, starving, depressed, but actually\na good young piece of ass would have solved all my rancor,\nbut I didn’t know this; I listened to my Italian and my Jew\nand I went out down dark alleys smoking borrowed cigarettes\nand watching the backs of houses come down in flames,\nbut somewhere we missed: we were not men enough,\n         large or small enough,\nor we only wanted to talk or we were bored, so the anarchy\n         fell through,\nand the Jew died and the Italian grew angry because I stayed\n         with his\nwife when he went down to the pharmacy; he did not care to have\nhis personal government overthrown, and she overthrew easy, and\nI had some guilt: the children were asleep in the other bedroom\nbut later I won $200 in a crap game and took a bus to New Orleans\nand I stood on the corner listening to the music coming from bars\nand then I went inside to the bars,\nand I sat there thinking about the dead Jew,\nhow all he did was sew on buttons and talk,\nand how he gave way although he was stronger than any of us\nhe gave way because his bladder would not go on,\nand maybe that saved Wall Street and Manhattan\nand the Church and Central Park West and Rome and the\nLeft Bank, but the pharmacist’s wife, she was nice,\nshe was tired of bombs under the pillow and hissing the Pope,\nand she had a very nice figure, very good legs,\nbut I guess she felt as I: that the weakness was not Government\nbut Man, one at a time, that men were never as strong as\n         their ideas\nand that ideas were governments turned into men;\nand so it began on a couch with a spilled martini\nand it ended in the bedroom: desire, revolution,\nnonsense ended, and the shades rattled in the wind,\nrattled like sabers, cracked like cannon,\nand 30 dogs, 20 men on 20 horses chased one fox\nacross the fields under the sun,\nand I got out of bed and yawned and scratched my belly\nand knew that soon       very soon     I would have to get\nvery drunk      again.")
 
 
-var select = document.getElementById("select");
+var language_select = document.getElementById("language");
+var author_select = document.getElementById("authors");
 var author_tag = document.createElement("h2");
 var title_tag = document.createElement("h3");
 var text_tag = document.createElement("p");
-new_poem();
+
+authors.forEach(element => {author_select.appendChild(create_option(element.name))})
+author_tag.innerText = "Number of authors: " + authors.length;
+text_tag.innerText = "Number of poems: " + poems.length;
 document.getElementById("content").appendChild(author_tag);
 document.getElementById("content").appendChild(title_tag);
 document.getElementById("content").appendChild(text_tag);
 
 function new_poem(){
-    var poem = poems[Math.round(Math.random() * poems.length)];
-    if(select.value == poem.get_language() || select.value == "ANY") {
+    var poem = poems[Math.floor(Math.random() * poems.length)];
+    if(author_select.value == "ANY"){
+        if(language_select.value == poem.get_language() || language_select.value == "ANY") {
+            author_tag.innerText = poem.get_author();
+            title_tag.innerText = poem.get_title();
+            text_tag.innerText = poem.get_text();
+        }
+        else {
+            new_poem();
+        }
+    }
+    else{
+        authors.forEach(element => {
+            if(element.is_author(author_select.value)){
+                poem = element.get_poem();
+                break;
+            }
+        });
         author_tag.innerText = poem.get_author();
         title_tag.innerText = poem.get_title();
         text_tag.innerText = poem.get_text();
-    }
-    else {
-        new_poem();
     }
 }

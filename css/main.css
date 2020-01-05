@@ -24,7 +24,7 @@ button, select {
     margin: 1vw auto;
 }
 
-h2, h3 {
+h2, h3, p {
     padding: 0 0 5vw 0;
     font-weight: 100;
     text-align: center;
@@ -37,9 +37,6 @@ h3 {
 p {
     line-height: 2rem;
     display: block;
-    font-weight: 100;
-    margin: auto;
-    width: 70%;
 }
 
 div {
