@@ -1,11 +1,6 @@
 let poems = [];
 
 class Poem{
-    author = "";
-    name = "";
-    text = "";
-    language = "";
-
     constructor(author, name, text){
         this.author = author.name;
         this.language = author.language;
