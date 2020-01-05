@@ -49,9 +49,8 @@ function create_poem(author, name, text){
 }
 
 class Author{
-    poems_by = [];
-
     constructor(name, language){
+        this.poems_by = [];
         this.name = name;
         this.language = language;
         authors.push(this);
