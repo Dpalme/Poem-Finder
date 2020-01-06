@@ -16,6 +16,7 @@ mario = new Author("Mario Benedetti", "ES");
 no = new Author("No Somos Marineros", "ES");
 samsa = new Author("Samsa", "EN");
 sor = new Author("Sor Juana Inés de la Cruz", "ES");
+sureste = new Author("Sureste", "ES");
 tino = new Author("Tino el Pingüino", "ES");
 tyler = new Author("Tyler The Creator", "EN");
 create_poem(
