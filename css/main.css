@@ -15,7 +15,12 @@ body{
 
 h1 {
     margin-top: 5vw;
-    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+a, a:visited, a:focus{
+    color: blue;
+    display: block;
     text-align: center;
 }
 
@@ -25,7 +30,7 @@ button, select {
     margin: 1vw auto;
 }
 
-h2, h3, p {
+h2, h3, h4 {
     padding: 0 0 5vw 0;
     font-weight: 100;
     text-align: center;
@@ -35,8 +40,10 @@ h3 {
     font-style: italic;
 }
 
-p {
+p, PRE {
     line-height: 2rem;
+    padding: 1vw;
+    text-align: left;
     display: block;
     margin: auto;
 }

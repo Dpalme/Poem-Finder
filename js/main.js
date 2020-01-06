@@ -82,16 +82,16 @@ var text_tag;
 function start() {
 	language_select = document.getElementById("language");
 	author_select = document.getElementById("authors");
-	poem_number = document.createElement("p");
+	poem_number = document.createElement("h4");
 	author_tag = document.createElement("h2");
 	title_tag = document.createElement("h3");
-	text_tag = document.createElement("p");
+	text_tag = document.createElement("p")
 
 	authors.forEach(element => {
 		author_select.appendChild(create_option(element.name));
 	});
 	author_tag.innerText = "Number of authors: " + authors.length;
-	poem_number.innerText = "Number of poems: " + poems.length;
+	poem_number.innerText = "Number of poems/songs: " + poems.length;
 	document.getElementById("content").appendChild(poem_number);
 	document.getElementById("content").appendChild(author_tag);
 	document.getElementById("content").appendChild(title_tag);
