@@ -82,6 +82,7 @@ var text_tag;
 function start() {
 	language_select = document.getElementById("language");
 	author_select = document.getElementById("authors");
+	poem_number = document.createElement("p");
 	author_tag = document.createElement("h2");
 	title_tag = document.createElement("h3");
 	text_tag = document.createElement("p");
@@ -90,7 +91,8 @@ function start() {
 		author_select.appendChild(create_option(element.name));
 	});
 	author_tag.innerText = "Number of authors: " + authors.length;
-	text_tag.innerText = "Number of poems: " + poems.length;
+	poem_number.innerText = "Number of poems: " + poems.length;
+	document.getElementById("content").appendChild(poem_number);
 	document.getElementById("content").appendChild(author_tag);
 	document.getElementById("content").appendChild(title_tag);
 	document.getElementById("content").appendChild(text_tag);
@@ -99,6 +101,7 @@ function start() {
 function new_poem() {
 	var poem = poems[Math.floor(Math.random() * poems.length)];
 	if (author_select.value == "ANY") {
+		poem_number.innerText = poems.length + " total poems";
 		if (
 			language_select.value == poem.get_language() ||
 			language_select.value == "ANY"
@@ -112,6 +115,7 @@ function new_poem() {
 	} else {
 		authors.forEach(element => {
 			if (element.is_author(author_select.value)) {
+				poem_number.innerText = element.poems_by.length + " poems by " + element.name;
 				var new_poem = element.get_poem();
 				if (element.poems_by.length > 1) {
 					while (poem == new_poem) {

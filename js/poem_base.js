@@ -59,6 +59,56 @@ mario,
 );
 create_poem(
 antonio,
+"Amanecer de otoño",
+"Una larga carretera\nentre grises peñascales,\ny alguna humilde pradera\ndonde pacen negros toros. Zarzas, malezas,jarales.\n\nEstá la tierra mojada\npor las gotas del rocío,\ny la alameda dorada,\nhacia la curva del río.\nTras los montes de violeta\nquebrado el primer albor:\na la espalda la escopeta,\nentre sus galgos agudos, caminando un cazador.\n\n"
+);
+create_poem(
+antonio,
+"Anoche cuando dormía",
+"Anoche cuando dormía\nsoñé ¡bendita ilusión!\nque una fontana fluía\ndentro de mi corazón.\nDí: ¿por qué acequia escondida,\nagua, vienes hasta mí,\nmanantial de nueva vida\nen donde nunca bebí?\n\nAnoche cuando dormía\nsoñé ¡bendita ilusión!\nque una colmena tenía\ndentro de mi corazón;\ny las doradas abejas\niban fabricando en él,\ncon las amarguras viejas,\nblanca cera y dulce miel.\n\nAnoche cuando dormía\nsoñé ¡bendita ilusión!\nque un ardiente sol lucía\ndentro de mi corazón.\nEra ardiente porque daba\ncalores de rojo hogar,\ny era sol porque alumbraba\ny porque hacía llorar.\n\nAnoche cuando dormía\nsoñé ¡bendita ilusión!\nque era Dios lo que tenía\ndentro de mi corazón.\n\n"
+);
+create_poem(
+antonio,
+"El poeta",
+"Maldiciendo su destino\ncomo Glauco, el dios marino,\nmira, turbia la pupila\nde llanto, el mar, que le debe su blanca virgen Scyla.\n\nÉl sabe que un Dios más fuerte\ncon la sustancia inmortal está jugando a la muerte,\ncual niño bárbaro. Él piensa\nque ha de caer como rama que sobre las aguas flota,\nantes de perderse, gota\nde mar, en la mar inmensa.\n\nEn sueños oyó el acento de una palabra divina;\nen sueños se le ha mostrado la cruda ley diamantina,\nsin odio ni amor, y el frío\nsoplo del olvido sabe sobre un arenal de hastío.\n\nBajo las palmeras del oasis el agua buena\nmiró brotar de la arena;\ny se abrevó entre las dulces gacelas, y entre los fieros\nanimales carniceros...\n\nY supo cuánto es la vida hecha de sed y dolor.\nY fue compasivo para el ciervo y el cazador,\npara el ladrón y el robado,\npara el pájaro azorado,\npara el sanguinario azor.\n\nCon el sabio amargo dijo: Vanidad de vanidades,\ntodo es negra vanidad;\ny oyó otra voz que clamaba, alma de sus soledades:\nsólo eres tú, luz que fulges en el corazón, verdad.\n\nY viendo cómo lucían\nmiles de blancas estrellas,\npensaba que todas ellas\nen su corazón ardían.\n¡Noche de amor!\n\nY otra noche\nsintió la mala tristeza\nque enturbia la pura llama,\ny el corazón que bosteza,\ny el histrión que declama\n\nY dijo: Las galerías\ndel alma que espera están\ndesiertas, mudas, vacías:\nlas blancas sombras se van.\n\nY el demonio de los sueños abrió el jardín encantado de\nayer. ¡Cuán bello era!\n¡Qué hermosamente el pasado\nfingía la primavera,\ncuando del árbol de otoño estaba el fruto colgado,\nmísero fruto podrido,\nque en el hueco acibarado\nguarda el gusano escondido!\n¡Alma, que en vano quisiste ser más joven cada día,\narranca tu flor, la humilde flor de la melancolía!\n\n"
+);
+create_poem(
+antonio,
+"El viajero",
+"Está en la sala familiar, sombría,\ny entre nosotros, el querido hermano\nque en el sueño infantil de un claro día\nvimos partir hacia un país lejano.\n\nHoy tiene ya las sienes plateadas,\nun gris mechón sobre la angosta frente,\ny la fría inquietud de sus miradas\nrevela un alma casi toda ausente.\n\nDeshójanse las copas otoñales\ndel parque mustio y viejo.\nLa tarde, tras los húmedos cristales,\nse pinta, y en el fondo del espejo.\n\nEl rostro del hermano se ilumina\nsuavemente. ¿Floridos desengaños\ndorados por la tarde que declina?\n¿Ansias de vida nueva en nuevos años?\n\n¿Lamentará la juventud perdida?\nLejos quedó -la pobre loba- muerta.\n¿La blanca juventud nunca vivida\nteme, que ha de cantar ante su puerta?\n\n¿Sonríe el sol de oro\nde la tierra de un sueño no encontrada;\ny ve su nave hender el mar sonoro,\nde viento y luz la blanca vela hinchada?\n\nÉl ha visto las hojas otoñales,\namarillas, rodar, las olorosas\nramas del eucalipto, los rosales\nque enseñan otra vez sus blancas rosas\n\nY este dolor que añora o desconfía\nel temblor de una lágrima reprime,\ny un resto de viril hipocresía\nen el semblante pálido se imprime.\n\nSerio retrato en la pared clarea\ntodavía. Nosotros divagamos.\nEn la tristeza del hogar golpea\nel tictac del reloj. Todos callamos.\n\n"
+);
+create_poem(
+antonio,
+"La noria",
+"La tarde caía\ntriste y polvorienta.\nEl agua cantaba\nsu copla plebeya\nen los cangilones\nde la noria lenta.\nSoñaba la mula\n¡pobre mula vieja!,\nal compás de sombra\nque en el agua suena.\nLa tarde caía\ntriste y polvorienta.\nYo no sé qué noble,\ndivino poeta,\nunió a la amargura\nde la eterna rueda\nla dulce armonía\ndel agua que sueña,\ny vendó tus ojos,\n¡pobre mula vieja!...\nMas sé que fue un noble,\ndivino poeta,\ncorazón maduro\nde sombra y de ciencia.\n\n"
+);
+create_poem(
+antonio,
+"Mis poetas",
+"El primero es Gonzalo de Berceo llamado,\nGonzalo de Berceo, poeta y peregrino,\nque yendo en romería acaeció en un prado,\ny a quien los sabios pintan copiando un pergamino.\n\nTrovó a Santo Domingo, trovó a Santa María,\ny a San Millán, y a San Lorenzo y Santa Oria,\ny dijo: Mi dictado non es de juglaría;\nescrito lo tenemos; es verdadera historia.\n\nSu verso es dulce y grave; monótonas hileras\nde chopos invernales en donde nada brilla;\nrenglones como surcos en pardas sementeras,\ny lejos, las montañas azules de Castilia.\n\nÉl nos cuenta el repaire del romeo cansado;\nleyendo en santorales y libros de oración,\ncopiando historias viejas, nos dice su dictado,\nmientras le sale afuera la luz del corazón.\n\n"
+);
+create_poem(
+antonio,
+"Noche de verano",
+"El primero es Gonzalo de Berceo llamado,\nGonzalo de Berceo, poeta y peregrino,\nque yendo en romería acaeció en un prado,\ny a quien los sabios pintan copiando un pergamino.\n\nTrovó a Santo Domingo, trovó a Santa María,\ny a San Millán, y a San Lorenzo y Santa Oria,\ny dijo: Mi dictado non es de juglaría;\nescrito lo tenemos; es verdadera historia.\n\nSu verso es dulce y grave; monótonas hileras\nde chopos invernales en donde nada brilla;\nrenglones como surcos en pardas sementeras,\ny lejos, las montañas azules de Castilia.\n\nÉl nos cuenta el repaire del romeo cansado;\nleyendo en santorales y libros de oración,\ncopiando historias viejas, nos dice su dictado,\nmientras le sale afuera la luz del corazón.\n\n"
+);
+create_poem(
+antonio,
+"Noviembre 1913",
+"Un año más. El sembrador va echando\nla semilla en los surcos de la tierra.\nDos lentas yuntas aran,\nmientras pasan la nubes cenicientas\nensombreciendo el campo,\nlas pardas sementeras,\nlos grises olivares. Por el fondo\ndel valle del río el agua turbia lleva.\nTiene Cazorla nieve,\ny Mágina, tormenta,\nsu montera, Aznaitín. Hacia Granada,\nmontes con sol, montes de sol y piedra.\n\n"
+);
+create_poem(
+antonio,
+"Recuerdo infantil",
+"Una tarde parda y fría\nde invierno. Los colegiales\nestudian. Monotonía\nde lluvia tras los cristales.\n\nEs la clase. En un cartel\nse representa a Caín\nfugitivo, y muerto Abel,\njunto a una mancha carmín.\n\nCon timbre sonoro y hueco\ntruena el maestro, un anciano\nmal vestido, enjuto y seco,\nque lleva un libro en la mano.\n\nY todo un coro infantil\nva cantando la lección:\n«mil veces ciento, cien mil;\nmil veces mil, un millón».\n\nUna tarde parda y fría\nde invierno. Los colegiales\nestudian. Monotonía\nde la lluvia en los cristales.\n\n"
+);
+create_poem(
+antonio,
+"Sol de invierno",
+"Es mediodía. Un parque.\nInvierno. Blancas sendas;\nsimétricos montículos\ny ramas esqueléticas.\nBajo el invernadero,\nnaranjos en maceta,\ny en su tonel, pintado\nde verde, la palmera.\nUn viejecillo dice,\npara su capa vieja:\n«¡El sol, esta hermosura\nde sol!...» Los niños juegan.\nEl agua de la fuente\nresbala, corre y sueña\nlamiendo, casi muda,\nla verdinosa piedra.\n\n"
+);
+create_poem(
+antonio,
 "Tus ojos me recuerdan",
 "Tus ojos me recuerdan\nlas noches de verano,\nnegra noche sin luna,\norilla al mar salado,\ny un chispear de estrellas\nde un cielo negro y bajo.\nTus ojos me recuerdan\nlas noches de verano.\nY tu morena cara,\nlos trigos requemados\nde un suspirar de fuego\nde los maduros campos.\n\nTus ojos me recuerdan\nlas noches de verano.\n\nDe tu morena cara,\nde tu soñar gitano,\nde tu mirar de sombra\nquiero llenar mi vaso.\nMe embriagaré una noche\nde un cielo negro y bajo,\npara cantar contigo,\norilla al mar salado,\nuna canción que deje\ncenizas en los labios...\nDe tu mirar de sombra\nquiero llenar mi vaso.\n\nTus ojos me recuerdan\nlas noches de verano\n\n"
 );
