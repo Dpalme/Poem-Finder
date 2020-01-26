@@ -41,20 +41,25 @@ h3 {
 }
 
 p {
-    line-height: 2rem;
-    width: 70%;
-    padding: 1vw;
-    text-align: left;
-    display: block;
     margin: auto;
+    display: inline;
+    line-height: 2rem;
 }
 
 div {
     padding: 1vw 0 0 0;
 }
 
+.poem {
+    display: flex;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
     p {
-        width: 95%;
+        width: auto;
     }
 }

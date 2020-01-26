@@ -36,10 +36,6 @@ class Poem {
 	get_language() {
 		return this.language;
 	}
-
-	to_string() {
-		return this.author + "\n\n" + this.name + "\n\n" + this.text;
-	}
 }
 
 function create_poem(author, name, text) {
@@ -67,10 +63,14 @@ class Author {
 	is_author(author_name) {
 		return author_name == this.name;
 	}
+}
 
-	to_string() {
-		return this.name + ", " + this.language;
-	}
+Poem.prototype.toString = function() {
+	return this.name + "\n";
+}
+
+Author.prototype.toString = function() {
+	return "\n" + this.name + "\nlanguage: " + this.language + "\n" + "poems: " + this.poems_by.toString();
 }
 
 var language_select;
@@ -85,7 +85,10 @@ function start() {
 	poem_number = document.createElement("h4");
 	author_tag = document.createElement("h2");
 	title_tag = document.createElement("h3");
-	text_tag = document.createElement("p")
+	text_div = document.createElement("div");
+	text_div.classList.add("poem");
+	text_tag = document.createElement("p");
+	text_div.appendChild(text_tag);
 
 	authors.forEach(element => {
 		author_select.appendChild(create_option(element.name));
@@ -95,7 +98,7 @@ function start() {
 	document.getElementById("content").appendChild(poem_number);
 	document.getElementById("content").appendChild(author_tag);
 	document.getElementById("content").appendChild(title_tag);
-	document.getElementById("content").appendChild(text_tag);
+	document.getElementById("content").appendChild(text_div);
 }
 
 function new_poem() {
@@ -129,4 +132,10 @@ function new_poem() {
 		title_tag.innerText = poem.get_title();
 		text_tag.innerText = poem.get_text();
 	}
+}
+
+function poems_index(){
+	author_tag.innerText = "";
+	title_tag.innerText = "";
+	text_tag.innerText = authors.toString();
 }

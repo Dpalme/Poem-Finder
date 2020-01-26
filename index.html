@@ -10,9 +10,12 @@
     <script src="js/poem_base.js"></script>
 </head>
 <body onload="start()">
-    <h1>Random Poem/Song</h1>
+    <nav>
+        <h1>Random Poem/Song </h1>
+        <button onclick="poems_index()">All poems/songs</button>
+    </nav>
+    
     <div>
-        <a href="poem_index.txt">All poems/songs</a>
         <button onclick="new_poem()">New</button>
         <select id="language" onchange="new_poem()">
             <option value="ANY">Any</option>
@@ -23,6 +26,7 @@
             <option value="ANY">Any</option>
         </select>
     </div>
+    
     <div id="content"></div>
 </body>
 </html>
