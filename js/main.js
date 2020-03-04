@@ -87,7 +87,7 @@ function start() {
 	title_tag = document.createElement("h3");
 	text_div = document.createElement("div");
 	text_div.classList.add("poem");
-	text_tag = document.createElement("p");
+	text_tag = document.createElement("pre");
 	text_div.appendChild(text_tag);
 
 	authors.forEach(element => {
