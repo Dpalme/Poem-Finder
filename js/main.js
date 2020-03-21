@@ -73,32 +73,27 @@ Author.prototype.toString = function() {
 	return "\n" + this.name + "\nlanguage: " + this.language + "\n" + "poems: " + this.poems_by.toString();
 }
 
-var language_select;
-var author_select;
-var author_tag;
-var title_tag;
-var text_tag;
-
 function start() {
+	content = document.getElementById("content");
 	language_select = document.getElementById("language");
 	author_select = document.getElementById("authors");
 	poem_number = document.createElement("h4");
+	poem_number.classList.add("half-gutter-margin-bottom");
 	author_tag = document.createElement("h2");
 	title_tag = document.createElement("h3");
-	text_div = document.createElement("div");
-	text_div.classList.add("poem");
+	title_tag.classList.add("gutter-margin-vertical");
 	text_tag = document.createElement("pre");
-	text_div.appendChild(text_tag);
+	text_tag.classList.add("poem");
 
 	authors.forEach(element => {
 		author_select.appendChild(create_option(element.name));
 	});
 	author_tag.innerText = "Number of authors: " + authors.length;
 	poem_number.innerText = "Number of poems/songs: " + poems.length;
-	document.getElementById("content").appendChild(poem_number);
-	document.getElementById("content").appendChild(author_tag);
-	document.getElementById("content").appendChild(title_tag);
-	document.getElementById("content").appendChild(text_div);
+	content.appendChild(poem_number);
+	content.appendChild(author_tag);
+	content.appendChild(title_tag);
+	content.appendChild(text_tag);
 }
 
 function new_poem() {

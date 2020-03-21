@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Random Poem</title>
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://dpalme.github.io/Peoria/css/peoria-0-2-1.css">
     <script src="js/main.js"></script>
     <script src="js/poem_base.js"></script>
 </head>
-<body onload="start()">
-    <nav>
+
+<body onload="start()" class="night">
+    <div class="container">
         <h1>Random Poem/Song </h1>
-        <button onclick="poems_index()">All poems/songs</button>
-    </nav>
-    
-    <div>
-        <button onclick="new_poem()">New</button>
-        <select id="language" onchange="new_poem()">
-            <option value="ANY">Any</option>
-            <option value="ES">ES</option>
-            <option value="EN">EN</option>
-        </select>
-        <select id="authors" onchange="new_poem()">
-            <option value="ANY">Any</option>
-        </select>
+
+        <div class="gutter-margin-vertical">
+            <button onclick="poems_index()" class="half-gutter-padding">All poems/songs</button>
+            <button onclick="new_poem()" class="half-gutter-padding">New</button>
+            <select id="language" onchange="new_poem()" class="white-bg black rounded half-gutter-padding">
+                <option value="ANY">Any</option>
+                <option value="ES">ES</option>
+                <option value="EN">EN</option>
+            </select>
+
+            <select id="authors" onchange="new_poem()" class="white-bg black rounded half-gutter-padding">
+                <option value="ANY">Any</option>
+            </select>
+        </div>
+
+        <div id="content"></div>
     </div>
-    
-    <div id="content"></div>
+
 </body>
+
 </html>
