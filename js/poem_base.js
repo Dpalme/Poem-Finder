@@ -19,6 +19,17 @@ sor = new Author("Sor Juana Inés de la Cruz", "ES");
 sureste = new Author("Sureste", "ES");
 tino = new Author("Tino el Pingüino", "ES");
 tyler = new Author("Tyler The Creator", "EN");
+neonpajamas = new Author("Neon Pajamas", "EN");
+kathryn_scanlan = new Author("Kathryn Scanlan", "EN");
+
+create_poem(kathryn_scanlan,
+"Happy Wife, Happy Life",
+"When my wife died I did not want to live, so when my heart stopped I thought, Good. But my daughter took me to the hospital and they opened my chest and found me in there.\nMy wife would say, Arguing with you is like talking to a bowl of potatoes! So I would argue with het sometimes just to make her happy.");
+
+create_poem(neonpajamas,
+"Greetings",
+"Corporate bought the man\na greeting card but forgot\nwhat for, the whole office unsure\nif it was cancer or a wedding\nor a divorce or a local family\nmember beheading, so the card\nfeatured a simple flower on the front\nwhile the inside read,\n'Congratulations, we’re sorry,\nthank you for everything.'\nWhen the man arrived at work\nten minutes early on Monday morning\nhe read the card a few times\nand wept quietly at his desk,\nhis shoulders muted jackhammers.\nThe card now hangs on his mantel\nnext to photos of his newborn\nand an assortment of strongly\nscented candles. His wife’s favorite.");
+
 create_poem(
 samsa,
 "Butterflies",
