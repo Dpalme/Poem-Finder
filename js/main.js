@@ -66,11 +66,15 @@ class Author {
 }
 
 Poem.prototype.toString = function() {
-	return this.name + "\n";
+	return '<a class="block four columns blue margin-none" onclick="get_poem(`' + this.author + '`, `' + this.name + '`)">'+ this.name + '</a>';
 }
 
 Author.prototype.toString = function() {
-	return "\n" + this.name + "\nlanguage: " + this.language + "\n" + "poems: " + this.poems_by.toString();
+	poems = ""
+	this.poems_by.forEach(poem => {
+		poems += poem.toString() + "\n";
+	});
+	return '<h3 class="full column">' + this.name + '</h3>\n<h4 class="full column">language: ' + this.language + '</h4>\n<p class="full column">Poems:</p>\n<div class="full column col-margin-bottom">' + poems + '</div>';
 }
 
 function start() {
@@ -84,16 +88,32 @@ function start() {
 	title_tag.classList.add("gutter-margin-vertical");
 	text_tag = document.createElement("pre");
 	text_tag.classList.add("poem");
+	index = document.createElement("div");
 
 	authors.forEach(element => {
 		author_select.appendChild(create_option(element.name));
 	});
 	author_tag.innerText = "Number of authors: " + authors.length;
 	poem_number.innerText = "Number of poems/songs: " + poems.length;
+	content.appendChild(index);
 	content.appendChild(poem_number);
 	content.appendChild(author_tag);
 	content.appendChild(title_tag);
 	content.appendChild(text_tag);
+}
+
+function set_poem(poem){
+	index.innerHTML = "";
+	author_tag.innerText = poem.get_author();
+	title_tag.innerText = poem.get_title();
+	text_tag.innerText = poem.get_text();
+}
+
+function clear(){
+	index.innerHTML = "";
+	author_tag.innerText = "";
+	title_tag.innerText = "";
+	text_tag.innerText = "";
 }
 
 function new_poem() {
@@ -104,9 +124,7 @@ function new_poem() {
 			language_select.value == poem.get_language() ||
 			language_select.value == "ANY"
 		) {
-			author_tag.innerText = poem.get_author();
-			title_tag.innerText = poem.get_title();
-			text_tag.innerText = poem.get_text();
+			set_poem(poem);
 		} else {
 			new_poem();
 		}
@@ -123,14 +141,24 @@ function new_poem() {
 				poem = new_poem;
 			}
 		});
-		author_tag.innerText = poem.get_author();
-		title_tag.innerText = poem.get_title();
-		text_tag.innerText = poem.get_text();
+		set_poem(poem);
 	}
 }
 
+function get_poem(author, title){
+	authors.forEach(element => {
+		if (element.is_author(author)) {
+			poem_number.innerText = element.poems_by.length + " poems by " + element.name;
+			element.poems_by.forEach(poem => {
+				if(poem.get_title() == title){
+					set_poem(poem);
+				}
+			});
+		}
+	});
+}
+
 function poems_index(){
-	author_tag.innerText = "";
-	title_tag.innerText = "";
-	text_tag.innerText = authors.toString();
+	clear()
+	index.innerHTML = authors.toString();
 }
