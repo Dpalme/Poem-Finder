@@ -74,7 +74,7 @@ Author.prototype.toString = function() {
 	this.poems_by.forEach(poem => {
 		poems += poem.toString() + "\n";
 	});
-	return '<h3 class="full column">' + this.name + '</h3>\n<h4 class="full column">language: ' + this.language + '</h4>\n<p class="full column">Poems:</p>\n<div class="full column col-margin-bottom">' + poems + '</div>';
+	return '<h3 class="full column half-gutter-margin-bottom">' + this.name + '</h3>\n<h4 class="full column half-gutter-margin-bottom">language: ' + this.language + '</h4>\n<h4 class="full column half-gutter-margin-bottom">Poems:</h4>\n<div class="full column col-margin-bottom">' + poems + '</div>';
 }
 
 function start() {
