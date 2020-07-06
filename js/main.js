@@ -66,7 +66,7 @@ class Author {
 }
 
 Poem.prototype.toString = function() {
-	return '<a class="block four columns blue margin-none" onclick="get_poem(`' + this.author + '`, `' + this.name + '`)">'+ this.name + '</a>';
+	return '<a class="block four columns blue margin-none gutter-margin-bottom" onclick="get_poem(`' + this.author + '`, `' + this.name + '`)">'+ this.name + '</a>';
 }
 
 Author.prototype.toString = function() {
