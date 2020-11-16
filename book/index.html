@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Book</title>
+    <link rel='stylesheet' href='https://dpalmer.in/Peoria/css/normalize.css'>
+    <link rel='stylesheet' href='https://dpalmer.in/Peoria/css/peoria-0-4-3.css'>
+    <script src="./js/main.js"></script>
+    <script src="./js/book_data.js"></script>
+</head>
+
+<body onload="start()">
+    <div class="container mt-1">
+        <div class="col-6">
+            <a href="../" class="blue col-6 mb-1">Back</a>
+            <a onclick="document.body.classList.toggle('night')" class="blue col-6 text-r mb-1">night</a>
+            <h1 class="text-c mt-sm">Random Book</h1>
+            <button onclick="new_book()" class="col-12 center-x my-sm">New Book</button>
+        </div>
+
+        <div class="col-6 relative">
+            <h3 class=""></h3>
+            <h4 class="my-sm"></h4>
+            <pre></pre>
+        </div>
+    </div>
+</body>
+
+</html>
