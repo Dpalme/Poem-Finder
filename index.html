@@ -1,37 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Random Poem</title>
-    <link rel="stylesheet" href="https://dpalme.github.io/Peoria/css/peoria-0-2-2.css">
-    <script src="js/main.js"></script>
-    <script src="js/poem_base.js"></script>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+
+    <!-- Primary Meta Tags -->
+    <title>Random</title>
+    <meta name='title' content=''>
+    <meta name='description' content=''>
+
+    <!-- Open Graph / Facebook -->
+    <meta property='og:type' content='website'>
+    <meta property='og:url' content='./'>
+    <meta property='og:title' content='Random'>
+    <meta property='og:description' content='A collection of random things I enjoy.'>
+    <meta property='og:image' content='./pain.png'>
+
+    <!-- Twitter -->
+    <meta property='twitter:card' content='summary_large_image'>
+    <meta property='og:url' content='./'>
+    <meta property='twitter:title' content='Random'>
+    <meta property='twitter:description' content='A collection of random things I enjoy.'>
+    <meta property='twitter:image' content='./pain.png'>
+
+    <!-- CSS -->
+    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/normalize.css'>
+    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/peoria-0-4-3.css'>
+
+    <!-- JS -->
+    <script src='https://dpalmer.in/Peoria/peoria.js'></script>
 </head>
 
-<body onload="start()" class="night">
-    <div class="container">
-        <h1>Random Poem/Song </h1>
-
-        <div class="gutter-margin-vertical">
-            <button onclick="poems_index()" class="half-gutter-padding">All poems/songs</button>
-            <button onclick="new_poem()" class="half-gutter-padding">New</button>
-            <select id="language" onchange="new_poem()" class="white-bg black rounded half-gutter-padding">
-                <option value="ANY">Any</option>
-                <option value="ES">ES</option>
-                <option value="EN">EN</option>
-            </select>
-
-            <select id="authors" onchange="new_poem()" class="white-bg black rounded half-gutter-padding">
-                <option value="ANY">Any</option>
-            </select>
-        </div>
-
-        <div id="content"></div>
+<body>
+    <div class="container mt-1">
+        <a href="./poem/" class="button col-4 white">Poem</a>
+        <a href="./album/" class="button col-4 white">Album</a>
+        <a href="./song/" class="button col-4 white">Song</a>
     </div>
-
 </body>
 
 </html>

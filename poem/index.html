@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Poem</title>
+    <link rel="stylesheet" href="https://dpalmer.in/Peoria/css/peoria-0-4-3.css">
+    
+    <script src="https://dpalmer.in/Peoria/peoria.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/poem_base.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Poppins:wght@200;300;400&display=swap');
+        pre {
+            font-family: 'Inconsolata', 'Courier New', Courier, monospace;
+            white-space: pre-wrap;       /* Since CSS 2.1 */
+            white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        h4 {
+            font-size: 1.75rem;
+        }
+    </style>
+</head>
+
+<body onload="start()" class="night">
+    <div class="container mt-lg mb-1">
+        <a href="../" class="blue col-2">Back</a>
+        <h1 class="col-12 my-sm">Random Poem/Song </h1>
+
+        <div class="col-8">
+            <button onclick="poems_index()">View all</button>
+            <button onclick="new_poem()">New</button>
+        </div>
+        <div class="col-4">
+            <select id="language" onchange="new_poem()" class="col-12 mb-sm black">
+                <option value="ANY">Any</option>
+                <option value="ES">ES</option>
+                <option value="EN">EN</option>
+            </select>
+    
+            <select id="authors" onchange="new_poem()" class="col-12 black">
+                <option value="ANY">Any</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="content" class="container"></div>
+
+</body>
+
+</html>
