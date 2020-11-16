@@ -8,14 +8,16 @@
     <title>Random Song</title>
     <link rel='stylesheet' href='https://dpalmer.in/Peoria/css/normalize.css'>
     <link rel='stylesheet' href='https://dpalmer.in/Peoria/css/peoria-0-4-3.css'>
+
     <script src="js/main.js"></script>
     <script src="js/album_data.js"></script>
-
 </head>
 
 <body onload="start()" class="">
     <div class="container mt-lg">
         <div class="col-6">
+            <a href="../" class="block blue col-6 bm-sm">Back</a>
+            <a onclick="document.body.classList.toggle('night')" class="block blue col-6 text-r bm-sm">night</a>
             <h1 class="text-c">Random Albums</h1>
             <button onclick="new_album()" class="col-12 center-x my-sm">New Album</button>
             <h3 class="mt-lg"></h3>
@@ -23,7 +25,7 @@
         </div>
         <div class="col-6 relative">
             <iframe src="" width="360" height="440" frameborder="0" allowtransparency="true" allow="encrypted-media"
-                class="center-x card rounded" style="padding: 0"></iframe>
+                class="center-x card p-sm"></iframe>
         </div>
     </div>
 </body>

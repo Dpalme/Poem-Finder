@@ -68,7 +68,7 @@ class Author {
 }
 
 Poem.prototype.toString = function () {
-	return '<a class="small-body d-block col-4 blue m-n mb-sm lh-1 p-sm" onclick="get_poem(`' + this.author + '`, `' + this.name + '`)">' + this.name + '</a>'
+	return '<a class="small-body d-block col-6 blue m-n mb-sm lh-1 p-sm" onclick="get_poem(`' + this.author + '`, `' + this.name + '`)">' + this.name + '</a>'
 }
 
 Author.prototype.toString = function () {
@@ -85,23 +85,24 @@ function start() {
 	index = objectToContent({
 		type: "div"
 	});
-	author_tag = objectToContent({
-		type: "h2",
-		classList: "col-6 mb-sm",
-		innerText: "Number of authors: " + authors.length
-	});
 	poem_number = objectToContent({
 		type: "p",
-		classList: "small-body col-6 mb-sm",
+		classList: "small-body col-12 mb-sm",
 		innerText: "Number of poems/songs: " + poems.length
 	});
+	author_tag = objectToContent({
+		type: "h2",
+		classList: "col-12 mb-sm",
+		innerText: "Number of authors: " + authors.length
+	});
+	
 	title_tag = objectToContent({
 		type: "h4",
 		classList: "col-12 mt-sm"
 	});
 	text_tag = objectToContent({
 		type: "pre",
-		classList: "col-12 mt-sm white-bg"
+		classList: "col-12 mt-sm mid-grey-bg"
 	});
 
 	authors.forEach(element => {

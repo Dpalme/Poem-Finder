@@ -13,19 +13,20 @@
 
 </head>
 
-<body onload="start()" class="green-bg night">
+<body onload="start()">
     <div class="container mt-1">
-        <div class="col-12">
-            <h1 class="text-c">Random Songs</h1>
-            <button onclick="new_song()" class="col-4 center-x my-sm">New Song</button>
-        </div>
+        <a href="../" class="block blue col-6 bm-sm">Back</a>
+        <a onclick="document.body.classList.toggle('night')" class="block blue col-6 text-r bm-sm">night</a>
         <div class="col-6">
+            <h1 class="text-c">Random Songs</h1>
+            <button onclick="new_song()" class="col-12 center-x my-sm">New Song</button>
+
             <h3 class=""></h3>
             <h4 class="my-sm"></h4>
         </div>
         <div class="col-6 relative">
             <iframe src="" width="360" height="440" frameborder="0" allowtransparency="true" allow="encrypted-media"
-                class="center-x"></iframe>
+             class="center-x card p-sm"></iframe>
         </div>
     </div>
 </body>
