@@ -15,8 +15,10 @@
 <body onload="start()">
     <div class="container mt-1">
         <div class="col-6">
-            <a href="../" class="blue col-6 mb-1">Back</a>
-            <a onclick="document.body.classList.toggle('night')" class="blue col-6 text-r mb-1">night</a>
+            <div class="col-12 blue">
+                <a href="../" class="mb-sm">Back</a>
+                <a onclick="document.body.classList.toggle('night')" class="float-r text-r">night</a>
+            </div>
             <h1 class="text-c mt-sm">Random Book</h1>
             <button onclick="new_book()" class="col-12 center-x my-sm">New Book</button>
         </div>

@@ -1,3 +1,16 @@
+class Song {
+    constructor(uri, name, artist) {
+        this.name = name;
+        this.artist = artist;
+        this.uri = uri;
+        songs.push(this);
+    }
+
+    get_embeded() {
+        return "https://open.spotify.com/embed/track/" + this.uri;
+    }
+}
+
 new Song("6pwYbD6wkai6S3iquVyq47", "Niño Perdido", "Sonido Gallo Negro");
 new Song("3usBViVaNvJsFkFxUpOxCP", "Never Break", "Langhorne Slim");
 new Song("4WHmafrJ0ANeLFf7UlXjiM", "Messed Up", "Verzache");

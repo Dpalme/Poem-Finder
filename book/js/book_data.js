@@ -1,3 +1,12 @@
+class Book {
+    constructor(name, author, extract) {
+        this.name = name;
+        this.author = author;
+        this.extract = extract;
+        books.push(this);
+    }
+}
+
 new Book("El nombre del viento", "Patrick Ruffus", "La obra se desarrolla en un mundo fantástico y narra la historia de Kvothe,​ arcanista, asesino, enamorado, músico, estudiante y aventurero; y de cómo se convirtió en un personaje legendario. Usando el nombre de Kote para ocultar su verdadera identidad, regenta una apartada posada llamada Roca de Guía, acompañado de su discípulo Bast. Un día les visita Devan Lochees, un escribano conocido como “Cronista”, interesado en escribir las biografías de las figuras más importantes de su tiempo, quien intenta convencerle para que revele su verdadera historia. Kvothe accede, con la condición de hacerlo en tres días.");
 new Book("Rimas, Leyendas y Narraciones", "Gustavo Adolfo Bécquer", "Los poemas de Bécquer están identificados con su personalidad, y existe una razón fundamental para hacer tal consideración: la vida del poeta está reflejada con un matiz imborrable en las características de las Rimas; todo en ellas es bruma, niebla, límite entre la realidad y la fantasía, renuncia, sacrificio, resignación. Las narraciones de este autor ofrecen misterio, fantasía desbordada, casi siempre amor. Bécquer es una figura emblemática del Romanticismo, movimiento que se alejó de las fórmulas para consagrar la sencillez y la sinceridad. En las creaciones de este escritor se encuentra un reflejo de sus características como pintor: color, luz, línea, forma. Su obra ha sido estudiada minuciosamente: la escritura de cada poema, el simbolismo que encierran las palabras, las bellas imágenes que constantemente se emplean; nada ha quedado por analizar, clasificar y tratar de comprender");
 new Book("El extranjero", "Albert Camus", "El protagonista, Meursault, es un francés argelino indiferente a la realidad por resultarle absurda e inabordable. El progreso tecnológico le ha privado de la participación en las decisiones colectivas y le ha convertido en «extranjero» dentro de lo que debería ser su propio entorno.");

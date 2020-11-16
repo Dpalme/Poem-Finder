@@ -16,7 +16,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Poppins:wght@200;300;400&display=swap');
 
         pre {
-            font-family: 'Inconsolata', 'Courier New', Courier, monospace;
+            font-family: var(--font-family);
             white-space: pre-wrap;       /* Since CSS 2.1 */
             white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
             white-space: -pre-wrap;      /* Opera 4-6 */
@@ -52,15 +52,17 @@
 <body onload="start()">
     <div class="container mt-lg mb-1">
         <div class="col-6">
-            <a href="../" class="block blue col-6 bm-sm">Back</a>
-            <a onclick="document.body.classList.toggle('night')" class="block blue col-6 text-r bm-sm">night</a>
-            <h1 class="col-12 my-sm">Random Poem/Song</h1>
+            <div class="col-12 blue">
+                <a href="../" class="mb-sm">Back</a>
+                <a onclick="document.body.classList.toggle('night')" class="float-r text-r">night</a>
+            </div>
+            <h1 class="col-12 my-sm">Random Poem</h1>
     
-            <div class="col-12 my-sm">
-                <button onclick="poems_index()" class="col-6">View all</button>
+            <div class="col-12 mb-sm">
+                <button onclick="poems_index()" class="col-6 mb-sm">View all</button>
                 <button onclick="new_poem()" class="col-6">New</button>
             </div>
-            <div class="col-12">
+            <div class="col-12 mb-sm">
                 <select id="language" onchange="new_poem()" class="col-12 mb-sm black">
                     <option value="ANY">Any</option>
                     <option value="ES">ES</option>
@@ -74,6 +76,7 @@
         </div>
         
         <div id="content" class="col-6"></div>
+        <a onclick="document.documentElement.scrollTop = document.body.scrollTop = 0;" class="col-12 mob-show blue mb-sm">Top</a>
     </div>
 
 </body>

@@ -7,8 +7,9 @@
 
     <!-- Primary Meta Tags -->
     <title>Random</title>
-    <meta name='title' content=''>
-    <meta name='description' content=''>
+    <meta name='title' content='Random'>
+    <meta name='description' content='A collection of random things I enjoy.'>
+    <link rel='favicon' type='image/png' href='./pain.png'>
 
     <!-- Open Graph / Facebook -->
     <meta property='og:type' content='website'>
@@ -29,20 +30,33 @@
     <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/peoria-0-4-3.css'>
 
     <!-- JS -->
-    <script src='https://dpalmer.in/Peoria/peoria.js'></script>
+    <script src='https://dpalmer.in/Peoria/peoria_2.js'></script>
+    <script src='./js/main.js'></script>
+    <script src='./poem/js/poem_base.js'></script>
+    <script src='./book/js/book_data.js'></script>
+    <script src='./short-story/js/short_story_data.js'></script>
+    <script src='./album/js/album_data.js'></script>
+    <script src='./song/js/tracks_data.js'></script>
 </head>
 
 <body>
-    <div class="container mt-1">
-        <a onclick="document.body.classList.toggle('night')" class="block blue col-12 text-c mb-lg">night</a>
-        <div>
-            <a href="./poem/" class="blue m-1">Poem</a>
-            <a href="./album/" class="blue m-1">Album</a>
-            <a href="./song/" class="blue m-1">Song</a>
-            <a href="./short-story/" class="blue m-1">Shory Story</a>
-            <a href="./book/" class="blue m-1">Book</a>
+    <div class="container mt-lg mb-1">
+        <div class="col-6" id="info-section">
+            <h1 class="col-12 text-r">Random</h1>
+            <select class="col-12 my-sm title-4 h-lg" id="random-t" onchange="change_type(document.getElementById('random-t').value)">
+                <option value="poem">Poem</option>
+                <option value="album">Album</option>
+                <option value="song">Song</option>
+                <option value="cuento">Shory Story</option>
+                <option value="book">Book</option>
+            </select>
+            
+            <button onclick="new_book()" class="col-12" id="rand-button">New Poem</button>
+            <a onclick="document.body.classList.toggle('night')" class="col-12 blue mt-sm text-r">night mode</a>
         </div>
-        
+
+        <div id="content" class="col-6"></div>
+        <a onclick="window.scrollTo(0, 0);" class="col-12 mob-show blue mb-sm">Top</a>
     </div>
 </body>
 

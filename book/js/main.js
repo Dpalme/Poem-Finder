@@ -3,19 +3,6 @@ let book_author;
 let book_name;
 let book_iframe;
 
-class Book {
-  constructor(name, author, extract) {
-    this.name = name;
-    this.author = author;
-    this.extract = extract;
-    books.push(this);
-  }
-
-  get_embeded() {
-    return "https://open.spotify.com/embed/track/" + this.uri;
-  }
-}
-
 function start(){
   book_author = document.querySelector("h3");
   book_name = document.querySelector("h4");

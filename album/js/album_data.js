@@ -1,3 +1,16 @@
+class Album {
+    constructor(uri, name, artist) {
+        this.uri = uri;
+        this.name = name;
+        this.artist = artist;
+        albums.push(this);
+    }
+
+    get_embeded() {
+        return "https://open.spotify.com/embed/album/" + this.uri;
+    }
+}
+
 new Album("7MtrCHFK57syVaitrSwSAY", "Silver Rose", "Silver Rose");
 new Album("4E0m7AIVc2d2QZMrMNXdMZ", "Reflektor", "Arcade Fire");
 new Album("6zmDdgPRKrvYwXk8eWv3iK", "6 Feet Beneath The Moon", "King Krule");

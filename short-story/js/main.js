@@ -3,19 +3,6 @@ let cuento_author;
 let cuento_name;
 let cuento_iframe;
 
-class Cuento {
-  constructor(name, author, extract) {
-    this.name = name;
-    this.author = author;
-    this.extract = extract;
-    cuentos.push(this);
-  }
-
-  get_embeded() {
-    return "https://open.spotify.com/embed/track/" + this.uri;
-  }
-}
-
 function start(){
   cuento_author = document.querySelector("h3");
   cuento_name = document.querySelector("h4");

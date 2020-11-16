@@ -3,19 +3,6 @@ let album_artist;
 let album_name;
 let album_iframe;
 
-class Album {
-  constructor(uri, name, artist) {
-    this.uri = uri;
-    this.name = name;
-    this.artist = artist;
-    albums.push(this);
-  }
-
-  get_embeded() {
-    return "https://open.spotify.com/embed/album/" + this.uri;
-  }
-}
-
 function start(){
   album_artist = document.querySelector("h3");
   album_name = document.querySelector("h4");
