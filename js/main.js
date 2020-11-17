@@ -10,11 +10,11 @@ let shows = [];
 window.onload = function start() {
 	author_tag = objectToContent({
 		type: "h2",
-		class: "col-12 mb-sm"
+		class: "col-12"
 	});
 	title_tag = objectToContent({
 		type: "h4",
-		class: "col-12 mb-sm"
+		class: "col-12 my-sm"
 	});
 	text_tag = objectToContent({
 		type: "pre",
@@ -22,7 +22,7 @@ window.onload = function start() {
     });
     iframe_tag = objectToContent({
         type: "iframe",
-        class: "d-none card p-n ml-sm",
+        class: "d-none card p-n col-12",
         frameborder: "0",
         allowtransparency: "true",
         allow: "encrypted-media",
