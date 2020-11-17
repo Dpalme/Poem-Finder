@@ -7,23 +7,24 @@
 
     <!-- Primary Meta Tags -->
     <title>Random</title>
-    <meta name='title' content='Random'>
-    <meta name='description' content='A collection of random things I enjoy.'>
-    <link rel='favicon' type='image/png' href='./pain.png'>
+    <meta name="title" content="Random">
+    <meta name="description" content="A collection of random things I enjoy.">
 
     <!-- Open Graph / Facebook -->
-    <meta property='og:type' content='website'>
-    <meta property='og:url' content='./'>
-    <meta property='og:title' content='Random'>
-    <meta property='og:description' content='A collection of random things I enjoy.'>
-    <meta property='og:image' content='./pain.png'>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Random">
+    <meta property="og:description" content="A collection of random things I enjoy.">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <!-- Twitter -->
-    <meta property='twitter:card' content='summary_large_image'>
-    <meta property='og:url' content='./'>
-    <meta property='twitter:title' content='Random'>
-    <meta property='twitter:description' content='A collection of random things I enjoy.'>
-    <meta property='twitter:image' content='./pain.png'>
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Random">
+    <meta property="twitter:description" content="A collection of random things I enjoy.">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <!-- CSS -->
     <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/normalize.css'>
@@ -45,7 +46,8 @@
     <div class="container mt-lg mb-1">
         <div class="col-6" id="info-section">
             <h1 class="col-12 text-r">Random</h1>
-            <select class="col-12 my-sm title-4 h-lg" id="random-t" onchange="change_type(document.getElementById('random-t').value)">
+            <select class="col-12 my-sm title-4 h-lg" id="random-t"
+                onchange="change_type(document.getElementById('random-t').value)">
                 <option value="poem">Poem</option>
                 <option value="album">Album</option>
                 <option value="song">Song</option>
@@ -54,7 +56,7 @@
                 <option value="movie">Movie</option>
                 <option value="show">TV Show</option>
             </select>
-            
+
             <button onclick="new_book()" class="col-12" id="rand-button">New Poem</button>
             <a onclick="document.body.classList.toggle('night')" class="col-12 blue mt-sm text-r">night mode</a>
         </div>
