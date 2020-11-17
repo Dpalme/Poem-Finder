@@ -27,7 +27,7 @@ window.onload = function start() {
         allowtransparency: "true",
         allow: "encrypted-media",
         scrolling: "no",
-        width: window.innerWidth < 440 ? parseInt(window.innerWidth * .775) + "px" + "px" : "440px",
+        width: window.innerWidth < window.innerHeight ? parseInt(window.innerWidth * .775) + "px" : "440px",
         height: "520px"
     });
 
