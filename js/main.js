@@ -7,7 +7,7 @@ let cuentos = [];
 let movies = [];
 let shows = [];
 
-window.onload = function start() {
+document.body.onload = function start() {
 	author_tag = objectToContent({
 		type: "h2",
 		class: "col-12"
