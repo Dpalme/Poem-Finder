@@ -75,12 +75,12 @@ function new_song() {
 
 function new_movie() {
     var movie = movies[Math.floor(Math.random() * movies.length)];
-    set_data(movie.name, "", "", movie.uri);
+    set_data("", movie.name, "", movie.uri);
 }
 
 function new_show() {
     var show = shows[Math.floor(Math.random() * shows.length)];
-    set_data(show.name, "", "", show.uri);
+    set_data("", show.name, "", show.uri);
 }
 
 function change_type(new_type){
