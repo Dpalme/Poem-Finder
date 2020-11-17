@@ -89,11 +89,6 @@ new Poem(
 );
 new Poem(
     sor,
-    "Continúa el mismo asunto",
-    "Feliciano me adora y le aborrezco;\nLisardo me aborrece y yo le adoro;\npor quien no me apetece ingrato, lloro,\ny al que me llora tierno, no apetezco:\n\na quien más me desdora, el alma ofrezco;\na quien me ofrece víctimas, desdoro;\ndesprecio al que enriquece mi decoro\ny al que le hace desprecios enriquezco;\n\nsi con mi ofensa al uno reconvengo,\nme reconviene el otro a mí ofendido\ny al padecer de todos modos vengo;\n\npues ambos atormentan mi sentido;\naquéste con pedir lo que no tengo\ny aquél con no tener lo que le pido"
-);
-new Poem(
-    sor,
     "Contiene una fantasía contenta con amor decente",
     "Deténte, sombra de mi bien esquivo,\nimagen del hechizo que más quiero,\nbella ilusión por quien alegre muero,\ndulce ficción por quien penosa vivo.\n\nSi al imán de tus gracias atractivo\nsirve mi pecho de obediente acero,\n¿para qué me enamoras lisonjero,\nsi has de burlarme luego fugitivo?\n\nMas blasonar no puedes satisfecho\nde que triunfa de mí tu tiranía;\nque aunque dejas burlado el lazo estrecho\n\nque tu forma fantástica ceñía,\npoco importa burlar brazos y pecho\nsi te labra prisión mi fantasía"
 );
@@ -157,11 +152,6 @@ new Poem(
 new Poem(
     antonio,
     "Mis poetas",
-    "El primero es Gonzalo de Berceo llamado,\nGonzalo de Berceo, poeta y peregrino,\nque yendo en romería acaeció en un prado,\ny a quien los sabios pintan copiando un pergamino.\n\nTrovó a Santo Domingo, trovó a Santa María,\ny a San Millán, y a San Lorenzo y Santa Oria,\ny dijo: Mi dictado non es de juglaría;\nescrito lo tenemos; es verdadera historia.\n\nSu verso es dulce y grave; monótonas hileras\nde chopos invernales en donde nada brilla;\nrenglones como surcos en pardas sementeras,\ny lejos, las montañas azules de Castilia.\n\nÉl nos cuenta el repaire del romeo cansado;\nleyendo en santorales y libros de oración,\ncopiando historias viejas, nos dice su dictado,\nmientras le sale afuera la luz del corazón."
-);
-new Poem(
-    antonio,
-    "Noche de verano",
     "El primero es Gonzalo de Berceo llamado,\nGonzalo de Berceo, poeta y peregrino,\nque yendo en romería acaeció en un prado,\ny a quien los sabios pintan copiando un pergamino.\n\nTrovó a Santo Domingo, trovó a Santa María,\ny a San Millán, y a San Lorenzo y Santa Oria,\ny dijo: Mi dictado non es de juglaría;\nescrito lo tenemos; es verdadera historia.\n\nSu verso es dulce y grave; monótonas hileras\nde chopos invernales en donde nada brilla;\nrenglones como surcos en pardas sementeras,\ny lejos, las montañas azules de Castilia.\n\nÉl nos cuenta el repaire del romeo cansado;\nleyendo en santorales y libros de oración,\ncopiando historias viejas, nos dice su dictado,\nmientras le sale afuera la luz del corazón."
 );
 new Poem(
@@ -287,21 +277,6 @@ new Poem(
 );
 new Poem(
     gustavo,
-    "II",
-    "Saeta que voladora\ncruza, arrojada al azar,\ny que no se sabe dónde\ntemblando se clavará;\n\nhoja que del árbol seca\narrebata el vendaval,\nsin que nadie acierte el surco\ndonde al polvo volverá;\n\ngigante ola que el viento\nriza y empuja en el mar,\ny rueda y pasa, y se ignora\nqué playa buscando va;\n\nluz que en cercos temblorosos\nbrilla, próxima a expirar,\ny que no se sabe de ellos\ncuál el último será;\n\neso soy yo, que al acaso\ncruzo el mundo sin pensar\nde dónde vengo ni a dónde\nmis pasos me llevarán."
-);
-new Poem(
-    gustavo,
-    "III",
-    "Sacudimiento extraño\nque agita las ideas,\ncomo huracán que empuja\nlas olas en tropel.\n\nMurmullo que en el alma\nse eleva y va creciendo\ncomo volcán que sordo\nanuncia que va a arder.\n\nDeformes siluetas\nde seres imposibles;\npaisajes que aparecen\ncomo al través de un tul.\n\nColores que fundiéndose\nremedan en el aire\nlos átomos del iris\nque nadan en la luz.\n\nIdeas sin palabras,\npalabras sin sentido;\ncadencias que no tienen\nni ritmo ni compás.\n\nMemorias y deseos\nde cosas que no existen;\naccesos de alegría,\nimpulsos de llorar.\n\nActividad nerviosa\nque no halla en qué emplearse;\nsin riendas que le guíen,\ncaballo volador.\n\nLocura que el espíritu\nexalta y desfallece,\nembriaguez divina\ndel genio creador...\nTal es la inspiración.\n\nGigante voz que el caos\nordena en el cerebro\ny entre las sombras hace\nla luz aparecer.\n\nBrillante rienda de oro\nque poderosa enfrena\nde la exaltada mente\nel volador corcel.\n\nHilo de luz que en haces\nlos pensamientos ata;\nsol que las nubes rompe\ny toca en el zenít.\n\nInteligente mano\nque en un collar de perlas\nconsigue las indóciles\npalabras reunir.\n\nArmonioso ritmo\nque con cadencia y número\nlas fugitivas notas\nencierra en el compás.\n\nCincel que el bloque muerde\nla estatua modelando,\ny la belleza plástica\nañade a la ideal.\n\nAtmósfera en que giran\ncon orden las ideas,\ncual átomos que agrupa\nrecóndita atracción.\n\nRaudal en cuyas ondas\nsu sed la fiebre apaga,\noasis que al espíritu\ndevuelve su vigor...\nTal es nuestra razón.\n\nCon ambas siempre en lucha\ny de ambas vencedor,\ntan sólo al genio es dado\na un yugo atar las dos."
-);
-new Poem(
-    gustavo,
-    "IV",
-    "No digáis que, agotado su tesoro,\nde asuntos falta, enmudeció la lira;\npodrá no haber poetas; pero siempre\nhabrá poesía.\n\nMientras las ondas de la luz al beso\npalpiten encendidas,\nmientras el sol las desgarradas nubes\nde fuego y oro vista,\nmientras el aire en su regazo lleve\nperfumes y armonías,\nmientras haya en el mundo primavera,\n¡habrá poesía!\n\nMientras la ciencia a descubrir no alcance\nlas fuentes de la vida,\ny en el mar o en el cielo haya un abismo\nque al cálculo resista,\nmientras la humanidad siempre avanzando\nno sepa a dó camina,\nmientras haya un misterio para el hombre,\n¡habrá poesía!\n\nMientras se sienta que se ríe el alma,\nsin que los labios rían;\nmientras se llore, sin que el llanto acuda\na nublar la pupila;\nmientras el corazón y la cabeza\nbatallando prosigan,\nmientras haya esperanzas y recuerdos,\n¡habrá poesía!\n\nMientras haya unos ojos que reflejen\nlos ojos que los miran,\nmientras responda el labio suspirando\nal labio que suspira,\nmientras sentirse puedan en un beso\ndos almas confundidas,\nmientras exista una mujer hermosa,\n¡habrá poesía!"
-);
-new Poem(
-    gustavo,
     "V",
     "Espíritu sin nombre,\nindefinible esencia,\nyo vivo con la vida\nsin formas de la idea.\n\nYo nado en el vacío,\ndel sol tiemblo en la hoguera,\npalpito entre las sombras\ny floto con las nieblas.\n\nYo soy el fleco de oro\nde la lejana estrella,\nyo soy de la alta luna\nla luz tibia y serena.\n\nYo soy la ardiente nube\nque en el ocaso ondea,\nyo soy del astro errante\nla luminosa estela.\n\nYo soy nieve en las cumbres,\nsoy fuego en las arenas,\nazul onda en los mares\ny espuma en las riberas.\n\nEn el laúd, soy nota,\nperfume en la violeta,\nfugaz llama en las tumbas\ny en las ruïnas yedra.\n\nYo atrueno en el torrente\ny silbo en la centella,\ny ciego en el relámpago\ny rujo en la tormenta.\n\nYo río en los alcores,\nsusurro en la alta yerba,\nsuspiro en la onda pura\ny lloro en la hoja seca.\n\nYo ondulo con los átomos\ndel humo que se eleva\ny al cielo lento sube\nen espiral inmensa.\n\nYo, en los dorados hilos\nque los insectos cuelgan\nme mezco entre los árboles\nen la ardorosa siesta.\n\nYo corro tras las ninfas\nque, en la corriente fresca\ndel cristalino arroyo,\ndesnudas juguetean.\n\nYo, en bosques de corales\nque alfombran blancas perlas,\npersigo en el océano\nlas náyades ligeras.\n\nYo, en las cavernas cóncavas\ndo el sol nunca penetra,\nmezclándome a los gnomos,\ncontemplo sus riquezas.\n\nYo busco de los siglos\nlas ya borradas huellas,\ny sé de esos imperios\nde que ni el nombre queda.\n\nYo sigo en raudo vértigo\nlos mundos que voltean,\ny mi pupila abarca\nla creación entera.\n\nYo sé de esas regiones\na do un rumor no llega,\ny donde informes astros\nde vida un soplo esperan.\n\nYo soy sobre el abismo\nel puente que atraviesa,\nyo soy la ignota escala\nque el cielo une a la tierra,\n\nYo soy el invisible\nanillo que sujeta\nel mundo de la forma\nal mundo de la idea.\n\nYo, en fin, soy ese espíritu,\ndesconocida esencia,\nperfume misterioso\nde que es vaso el poeta."
 );
@@ -314,11 +289,6 @@ new Poem(
     gustavo,
     "VII",
     "Del salón en el ángulo oscuro,\nde su dueña tal vez olvidada,\nsilenciosa y cubierta de polvo\nveíase el arpa.\n\n¡Cuánta nota dormía en sus cuerdas\ncomo el pájaro duerme en las ramas,\nesperando la mano de nieve\nque sabe arrancarlas!\n\n¡Ay! pensé; ¡cuántas veces el genio\nasí duerme en el fondo del alma,\ny una voz, como Lázaro, espera\nque le diga: «¡Levántate y anda!»."
-);
-new Poem(
-    gustavo,
-    "VIII",
-    "Cuando miro el azul horizonte\nperderse a lo lejos,\nal través de una gasa de polvo\ndorado e inquieto,\nme parece posible arrancarme\ndel mísero suelo\ny flotar con la niebla dorada\nen átomos leves\ncual ella deshecho.\n\nCuando miro de noche en el fondo\noscuro del cielo\nlas estrellas temblar como ardientes\npupilas de fuego,\nme parece posible a do brillan\nsubir en un vuelo\ny anegarme en su luz, y con ellas\nen lumbre encendido\nfundirme en un beso.\n\nEn el mar de la duda en que bogo\nni aun sé lo que creo;\nsin embargo estas ansias me dicen\nque yo llevo algo\ndivino aquí dentro."
 );
 new Poem(
     gustavo,
@@ -357,18 +327,8 @@ new Poem(
 );
 new Poem(
     gustavo,
-    "XVI",
-    "Si al mecer las azules campanillas\nde tu balcón,\ncrees que suspirando pasa el viento\nmurmurador,\nsabe que, oculto entre las verdes hojas,\nsuspiro yo.\n\nSi al resonar confuso a tus espaldas\nvago rumor,\ncrees que por tu nombre te ha llamado\nlejana voz,\nsabe que, entre las sombras que te cercan,\nte llamo yo.\n\nSi se turba medroso en la alta noche\ntu corazón,\nal sentir en tus labios un aliento\nabrasador,\nsabe que, aunque invisible, al lado tuyo,\nrespiro yo."
-);
-new Poem(
-    gustavo,
     "XVII",
     "Hoy la tierra y los cielos me sonríen,\nhoy llega al fondo de mi alma el sol,\nhoy la he visto... La he visto y me ha mirado...\n¡Hoy creo en Dios"
-);
-new Poem(
-    gustavo,
-    "XVIII",
-    "Fatigada del baile,\nencendido el color, breve el aliento,\napoyada en mi brazo,\ndel salón se detuvo en un extremo.\n\nEntre la leve gasa\nque levantaba el palpitante seno,\nuna flor se mecía\nen compasado y dulce movimiento.\n\nComo en cuna de nácar\nque empuja el mar y que acaricia el céfiro,\ntal vez allí dormía\nal soplo de sus labios entreabiertos.\n\n¡Oh, quién así ?pensaba?\ndejar pudiera deslizarse el tiempo!\n¡Oh, si las flores duermen,\nqué dulcísimo sueño!"
 );
 new Poem(
     gustavo,
@@ -492,28 +452,13 @@ new Poem(
 );
 new Poem(
     gustavo,
-    "XLIII",
-    "Dejé la luz a un lado, y en el borde\nde la revuelta cama me senté,\nmudo, sombrío, la pupila inmóvil\nclavada en la pared.\n\n¿Qué tiempo estuve así? No sé; al dejarme\nla embriaguez horrible del dolor,\nexpiraba la luz y en mis balcones\nreía al sol.\n\nNi sé tampoco en tan horribles horas\nen qué pensaba o qué pasó por mí;\nsólo recuerdo que lloré y maldije,\ny que en aquella noche envejecí."
-);
-new Poem(
-    gustavo,
     "XLIV",
     "Como en un libro abierto\nleo de tus pupilas en el fondo.\n¿A qué fingir el labio\nrisas que se desmienten con los ojos?\n\n¡Llora! No te avergüences\nde confesar que me quisiste un poco.\n¡Llora! Nadie nos mira.\nYa ves; yo soy un hombre... y también lloro"
 );
 new Poem(
     gustavo,
-    "XLV",
-    "En la clave del arco ruinoso\ncuyas piedras el tiempo enrojeció,\nobra de cincel rudo campeaba\nel gótico blasón.\n\nPenacho de su yelmo de granito,\nla yedra que colgaba en derredor\ndaba sombra al escudo en que una mano\ntenía un corazón.\n\nA contemplarle en la desierta plaza\nnos paramos los dos;\n?Y ese ?me dijo? es el cabal emblema\nde mi constante amor.\n\n¡Ay! Es verdad lo que me dijo entonces;\nverdad que el corazón\nlo llevará en la mano..., en cualquier parte...\npero en el pecho, no."
-);
-new Poem(
-    gustavo,
     "XLVI",
     "Me ha herido recatándose en las sombras,\nsellando con un beso su traición.\nLos brazos me echó al cuello y por la espalda\npartióme a sangre fría el corazón.\n\nY ella prosigue alegre su camino,\nfeliz, risueña, impávida. ¿Y por qué?\nPorque no brota sangre de la herida.\nPorque el muerto está en pie."
-);
-new Poem(
-    gustavo,
-    "XLVII",
-    "Yo me he asomado a las profundas simas\nde la tierra y del cielo,\ny les he visto el fin o con los ojos\no con el pensamiento.\n\nMas ¡ay!, de un corazón llegué al abismo\ny me incliné un momento,\ny mi alma y mis ojos se turbaron:\n¡Tan hondo era y tan negro!"
 );
 new Poem(
     gustavo,
@@ -547,16 +492,6 @@ new Poem(
 );
 new Poem(
     gustavo,
-    "LIV",
-    "Cuando volvemos las fugaces horas\ndel pasado a evocar,\ntemblando brilla en sus pestañas negras\nuna lágrima pronta a resbalar.\n\nY, al fin, resbala y cae como gota\nde rocío al pensar\nque cual hoy por ayer, por hoy mañana,\nvolveremos los dos a suspirar."
-);
-new Poem(
-    gustavo,
-    "LV",
-    "Entre el discorde estruendo de la orgía\nacarició mi oído,\ncomo nota de música lejana,\nel eco de un suspiro.\n\nEl eco de un suspiro que conozco,\nformado de un aliento que he bebido,\nperfume de una flor que oculta crece\nen un claustro sombrío.\n\nMi adorada de un día, cariñosa,\n¿En qué piensas?? me dijo.\nEn nada... En nada, ¿y lloras? Es que tengo\nalegre la tristeza y triste el vino."
-);
-new Poem(
-    gustavo,
     "LVI",
     "Hoy como ayer, mañana como hoy,\n¡y siempre igual!\nUn cielo gris, un horizonte eterno\ny andar... andar.\n\nMoviéndose a compás, como una estúpida\nmáquina, el corazón.\nLa torpe inteligencia del cerebro,\ndormida en un rincón.\n\nEl alma, que ambiciona un paraíso,\nbuscándole sin fe,\nfatiga sin objeto, ola que rueda\nignorando por qué.\n\nVoz que, incesante, con el mismo tono,\ncanta el mismo cantar,\ngota de agua monótona que cae\ny cae, sin cesar.\n\nAsí van deslizándose los días,\nunos de otros en pos;\nhoy lo mismo que ayer...; y todos ellos,\nsin gozo ni dolor.\n\n¡Ay, a veces me acuerdo suspirando\ndel antiguo sufrir!\nAmargo es el dolor, ¡pero siquiera\npadecer es vivir!"
 );
@@ -574,26 +509,6 @@ new Poem(
     gustavo,
     "LIX",
     "Yo sé cuál el objeto\nde tus suspiros es;\nyo conozco la causa de tu dulce\nsecreta languidez.\n\n¿Te ríes?... Algún día\nsabrás, niña, por qué.\nTú acaso lo sospechas,\ny yo lo sé.\n\nYo sé cuándo tú sueñas,\ny lo que en sueños ves;\ncomo en un libro, puedo lo que callas\nen tu frente leer.\n\n¿Te ríes?... Algún día\nsabrás, niña, por qué.\nTú acaso lo sospechas,\ny yo lo sé.\n\nYo sé por qué sonríes\ny lloras a la vez;\nyo penetro en los senos misteriosos\nde tu alma de mujer.\n\n¿Te ríes? ... Algún día\nsabrás, niña, por qué;\nmientras tú sientes mucho y nada sabes,\nyo, que no siento ya, todo lo sé."
-);
-new Poem(
-    gustavo,
-    "LX",
-    "Mi vida es un erial,\nflor que toco se deshoja;\nque en mi camino fatal\nalguien va sembrando el mal\npara que yo lo recoja."
-);
-new Poem(
-    gustavo,
-    "LXI",
-    "Al ver mis horas de fiebre\ne insomnio lentas pasar,\na la orilla de mi lecho,\n¿quién se sentará?\n\nCuando la trémula mano\ntienda, próximo a expirar,\nbuscando una mano amiga,\n¿quién la estrechará?\n\nCuando la muerte vidríe\nde mis ojos el cristal,\nmis párpados aún abiertos,\n¿quién los cerrará?\n\nCuando la campana suene\n(si suena en mi funeral)\nuna oración, al oírla,\n¿quién murmurará?\n\nCuando mis pálidos restos\noprima la tierra ya,\nsobre la olvidada fosa,\n¿quién vendrá a llorar?\n\n¿Quién en fin, al otro día,\ncuando el sol vuelva a brillar,\nde que pasé por el mundo\nquién se acordará?"
-);
-new Poem(
-    gustavo,
-    "LXII",
-    "Primero es un albor trémulo y vago,\nraya de inquieta luz que corta el mar;\nluego chispea y crece y se dilata\nen ardiente explosión de claridad.\n\nLa brilladora lumbre es la alegría,\nla temerosa sombra es el pesar.\n¡Ay! En la oscura noche de mi alma,\n¿cuándo amanecerá?"
-);
-new Poem(
-    gustavo,
-    "LXIII",
-    "Como enjambre de abejas irritadas,\nde un oscuro rincón de la memoria\nsalen a perseguirme los recuerdos\nde las pasadas horas.\n\nYo los quiero ahuyentar. ¡Esfuerzo inútil!\nMe rodean, me acosan,\ny unos tras otros a clavarme vienen\nel agudo aguijón que el alma encona."
 );
 new Poem(
     gustavo,
@@ -617,18 +532,8 @@ new Poem(
 );
 new Poem(
     gustavo,
-    "LXVIII",
-    "No sé lo que he soñado\nen la noche pasada.\nTriste, muy triste debió ser el sueño,\npues despierto la angustia me duraba.\n\nNoté al incorporarme\nhúmeda la almohada,\ny por primera vez sentí al notarlo,\nde un amargo placer henchirse el alma.\n\nTriste cosa es el sueño\nque llanto nos arranca,\nmas tengo en mi tristeza una alegría...\n¡Sé que aún me quedan lágrimas!"
-);
-new Poem(
-    gustavo,
     "LXIX",
     "Al brillar un relámpago nacemos,\ny aún dura su fulgor cuando morimos;\n¡tan corto es el vivir!\n\nLa Gloria y el Amor tras que corremos\nsombras de un sueño son que perseguimos;\n¡despertar es morir!"
-);
-new Poem(
-    gustavo,
-    "LXX",
-    "¡Cuántas veces, al pie de las musgosas\nparedes que la guardan,\noí la esquila que al mediar la noche\na los maitines llama!\n\n¡Cuántas veces trazó mi silueta\nla luna plateada,\njunto a la del ciprés, que de su huerto\nse asoma por las tapias!\n\nCuando en sombras la iglesia se envolvía,\nde su ojiva calada,\n¡cuántas veces temblar sobre los vidrios\nvi el fulgor de la lámpara!\n\nAunque el viento en los ángulos oscuros\nde la torre silbara,\ndel coro entre las voces percibía\nsu voz vibrante y clara.\n\nEn las noches de invierno, si un medroso\npor la desierta plaza\nse atrevía a cruzar, al divisarme\nel paso aceleraba.\n\nY no faltó una vieja que en el torno\ndijese a la mañana,\nque de algún sacristán muerto en pecado\nacaso era yo el alma.\n\nA oscuras conocía los rincones\ndel atrio y la portada;\nde mis pies las ortigas que allí crecen\nlas huellas tal vez guardan.\n\nLos búhos, que espantados me seguían\ncon sus ojos de llamas,\nllegaron a mirarme con el tiempo\ncomo a un buen camarada.\n\nA mi lado sin miedo los reptiles\nse movían a rastras;\nhasta los mudos santos de granito\ncreo que me saludaban."
 );
 new Poem(
     gustavo,
@@ -657,28 +562,13 @@ new Poem(
 );
 new Poem(
     gustavo,
-    "LXXVI",
-    "En la imponente nave\ndel templo bizantino,\nvi la gótica tumba a la indecisa\nluz que temblaba en los pintados vidrios.\n\nLas manos sobre el pecho,\ny en las manos un libro,\nuna mujer hermosa reposaba\nsobre la urna, del cincel prodigio.\n\nDel cuerpo abandonado,\nal dulce peso hundido,\ncual si de blanda pluma y raso fuera\nse plegaba su lecho de granito.\n\nDe la sonrisa última\nel resplandor divino\nguardaba el rostro, como el cielo guarda\ndel sol que muere el rayo fugitivo.\n\nDel cabezal de piedra\nsentados en el filo,\ndon ángeles, el dedo sobre el labio,\nimponían silencio en el recinto.\n\nNo parecía muerta;\nde los arcos macizos\nparecía dormir en la penumbra,\ny que en sueños veía el paraíso.\n\nMe acerqué de la nave\nal ángulo sombrío\ncon el callado paso que llegamos\njunto a la cuna donde duerme un niño.\n\nLa contemplé un momento,\ny aquel resplandor tibio,\naquel lecho de piedra que ofrecía\npróximo al muro otro lugar vacío,\n\nen el alma avivaron\nla sed de lo infinito,\nel ansia de esa vida de la muerte\npara la que un instante son los siglos ...\n\n*\n\nCansado del combate\nen que luchando vivo,\nalguna vez me acuerdo con envidia\nde aquel rincón oscuro y escondido.\n\nDe aquella muda y pálida\nmujer me acuerdo y digo:\n¡Oh, qué amor tan callado, el de la muerte!\n¡Qué sueño el del sepulcro, tan tranquilo!"
-);
-new Poem(
-    gustavo,
     "LXXVII",
     "Dices que tienes corazón, y sólo\nlo dices porque sientes sus latidos.\nEso no es corazón...; es una máquina,\nque, al compás que se mueve, hace ruido."
 );
 new Poem(
     gustavo,
-    "LXXVIII",
-    "Fingiendo realidades\ncon sombra vana,\ndelante del Deseo\nva la Esperanza.\nY sus mentiras,\ncomo el fénix, renacen\nde sus cenizas."
-);
-new Poem(
-    gustavo,
     "LXXIX",
     "Una mujer me ha envenenado el alma,\notra mujer me ha envenenado el cuerpo;\nninguna de las dos vino a buscarme,\nyo de ninguna de las dos me quejo.\n\nComo el mundo es redondo, el mundo rueda;\nsi mañana, rodando, este veneno\nenvenena a su vez ¿por qué acusarme?\n¿Puedo dar más de lo que a mí me dieron?"
-);
-new Poem(
-    gustavo,
-    "LXXX",
-    "Una mujer me ha envenenado el alma\notra mujer me ha envenenado el cuerpo;\nninguna de las dos vino a buscarme,\nyo, de ninguna de las dos me quejo.\n\nComo el mundo es redondo, el mundo rueda.\nSi mañana, rodando, este veneno\nenvenena a su vez, ¿porqué acusarme?\n¿Puedo dar más de lo que a mí me dieron?"
 );
 new Poem(
     gustavo,
