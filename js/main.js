@@ -31,7 +31,7 @@ window.onload = function start() {
         height: "520px"
     });
 
-    change_type("poem");
+    change_type("album");
 }
 
 function set_data(title, author, text, iframe) {
@@ -87,7 +87,7 @@ function change_type(new_type){
     clear_data();
     var button = document.getElementById('rand-button');
     button.setAttribute("onclick", "new_" + new_type + "()");
-    button.innerText = "New " + new_type;
+    button.innerText = new_type != "cuento" ? "New " + new_type : "new short story";
 
     if(new_type == "song" || new_type == "album" || new_type == "movie" || new_type == "show"){
         text_tag.classList.add("d-none");
