@@ -32,6 +32,8 @@
     <!-- JS -->
     <script src='https://dpalmer.in/Peoria/peoria_2.js'></script>
     <script src='./js/main.js'></script>
+    <script src='./js/movies.js'></script>
+    <script src='./js/shows.js'></script>
     <script src='./poem/js/poem_base.js'></script>
     <script src='./book/js/book_data.js'></script>
     <script src='./short-story/js/short_story_data.js'></script>
@@ -39,7 +41,7 @@
     <script src='./song/js/tracks_data.js'></script>
 </head>
 
-<body>
+<body class="night">
     <div class="container mt-lg mb-1">
         <div class="col-6" id="info-section">
             <h1 class="col-12 text-r">Random</h1>
@@ -47,8 +49,10 @@
                 <option value="poem">Poem</option>
                 <option value="album">Album</option>
                 <option value="song">Song</option>
-                <option value="cuento">Shory Story</option>
+                <option value="cuento">Short Story</option>
                 <option value="book">Book</option>
+                <option value="movie">Movie</option>
+                <option value="show">TV Show</option>
             </select>
             
             <button onclick="new_book()" class="col-12" id="rand-button">New Poem</button>

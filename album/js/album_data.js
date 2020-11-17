@@ -11,6 +11,12 @@ class Album {
     }
 }
 
+new Album("27C6iNWoN1gmSHIpPGVgkS", "The Avalanche", "Owen");
+new Album("6t0eIKq8adhPxIWP6TWhgP", "Seul", "Garou");
+new Album("2t1JMhasqIbvoWb89rt2AV", "Lucio Dalla (Legacy Edition)", "Lucio Dalla");
+new Album("12Biup1Sq5hpHsX85gJPb2", "Slide", "George Clanton");
+new Album("60qph1sDjhgZtPR4IEnu5Y", "Grandma", "Unique Salonga");
+new Album("4jgmGaLp4n8oFEoEQHR7A2", "11:11", "11:11");
 new Album("7MtrCHFK57syVaitrSwSAY", "Silver Rose", "Silver Rose");
 new Album("4E0m7AIVc2d2QZMrMNXdMZ", "Reflektor", "Arcade Fire");
 new Album("6zmDdgPRKrvYwXk8eWv3iK", "6 Feet Beneath The Moon", "King Krule");

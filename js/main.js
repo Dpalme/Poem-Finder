@@ -3,7 +3,9 @@ let authors = [];
 let books = [];
 let albums = [];
 let songs = [];
-let cuentos = []
+let cuentos = [];
+let movies = [];
+let shows = [];
 
 window.onload = function start() {
 	author_tag = objectToContent({
@@ -21,18 +23,18 @@ window.onload = function start() {
     iframe_tag = objectToContent({
         type: "iframe",
         class: "d-none card p-n ml-sm",
-        style: "border-top-left-radius: 2.5%; border-top-right-radius: 2.5%;",
         frameborder: "0",
         allowtransparency: "true",
         allow: "encrypted-media",
-        width: "440px",
+        scrolling: "no",
+        width: window.innerWidth < 440 ? parseInt(window.innerWidth * .775) + "px" + "px" : "440px",
         height: "520px"
-    })
+    });
 
     change_type("poem");
 }
 
-function set_data(author, title, text, iframe) {
+function set_data(title, author, text, iframe) {
 	author_tag.innerText = author;
 	title_tag.innerText = title;
     text_tag.innerText = text;
@@ -42,7 +44,8 @@ function set_data(author, title, text, iframe) {
 function clear_data() {
 	author_tag.innerText = "";
 	title_tag.innerText = "";
-	text_tag.innerText = "";
+    text_tag.innerText = "";
+    iframe_tag.classList.add("d-none");
 }
 
 function new_poem() {
@@ -52,12 +55,12 @@ function new_poem() {
 
 function new_book() {
     var book = books[Math.floor(Math.random() * books.length)];
-    set_data(book.name, book.author, book.extract);
+    set_data(book.author, book.name, book.extract);
 }
 
 function new_cuento() {
     var cuento = cuentos[Math.floor(Math.random() * cuentos.length)];
-    set_data(cuento.name, cuento.author, cuento.extract);
+    set_data(cuento.author, cuento.name, cuento.extract);
 }
 
 function new_album() {
@@ -70,12 +73,23 @@ function new_song() {
     set_data(song.artist, song.name, "", song.get_embeded());
 }
 
+function new_movie() {
+    var movie = movies[Math.floor(Math.random() * movies.length)];
+    set_data(movie.name, "", "", movie.uri);
+}
+
+function new_show() {
+    var show = shows[Math.floor(Math.random() * shows.length)];
+    set_data(show.name, "", "", show.uri);
+}
+
 function change_type(new_type){
     clear_data();
     var button = document.getElementById('rand-button');
     button.setAttribute("onclick", "new_" + new_type + "()");
     button.innerText = "New " + new_type;
-    if(new_type == "song" || new_type == "album"){
+
+    if(new_type == "song" || new_type == "album" || new_type == "movie" || new_type == "show"){
         text_tag.classList.add("d-none");
         iframe_tag.classList.remove("d-none");
     } else {
