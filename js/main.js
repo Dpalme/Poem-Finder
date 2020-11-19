@@ -6,6 +6,7 @@ let songs = [];
 let cuentos = [];
 let movies = [];
 let shows = [];
+let questions = [];
 
 window.onload = function start() {
 	author_tag = objectToContent({
@@ -18,7 +19,7 @@ window.onload = function start() {
 	});
 	text_tag = objectToContent({
 		type: "pre",
-		class: "col-12 mid-grey-bg"
+		class: "col-12 back-2 mid-grey-bg lh-1"
     });
     iframe_tag = objectToContent({
         type: "iframe",
@@ -26,7 +27,6 @@ window.onload = function start() {
         frameborder: "0",
         allowtransparency: "true",
         allow: "encrypted-media",
-        scrolling: "no",
         width: window.innerWidth < window.innerHeight ? parseInt(window.innerWidth * .775) + "px" : "440px",
         height: "520px"
     });
@@ -35,9 +35,9 @@ window.onload = function start() {
 }
 
 function set_data(title, author, text, iframe) {
-	author_tag.innerText = author;
-	title_tag.innerText = title;
-    text_tag.innerText = text;
+    if (author != "") { author_tag.classList.remove("d-none"); author_tag.innerText = author; } else { author_tag.classList.add("d-none") }
+    if (title != "") { title_tag.classList.remove("d-none"); title_tag.innerText = title; } else { title_tag.classList.add("d-none") }
+    if (text != "") { text_tag.classList.remove("d-none"); text_tag.innerText = text; } else { text_tag.classList.add("d-none") }
     if (iframe !== undefined) iframe_tag.setAttribute("src", iframe);
 }
 
@@ -45,12 +45,13 @@ function clear_data() {
 	author_tag.innerText = "";
 	title_tag.innerText = "";
     text_tag.innerText = "";
+    iframe_tag.setAttribute("src", "");
     iframe_tag.classList.add("d-none");
 }
 
 function new_poem() {
     var poem = poems[Math.floor(Math.random() * poems.length)];
-    set_data(poem.get_author(), poem.get_title(), poem.get_text());
+    set_data(poem.author, poem.name, poem.text);
 }
 
 function new_book() {
@@ -81,6 +82,11 @@ function new_movie() {
 function new_show() {
     var show = shows[Math.floor(Math.random() * shows.length)];
     set_data("", show.name, "", show.uri);
+}
+
+function new_question(){
+    var question = questions[Math.floor(Math.random() * shows.length)]
+    set_data("", "", question);
 }
 
 function change_type(new_type){

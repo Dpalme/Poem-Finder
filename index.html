@@ -35,6 +35,7 @@
     <script src='./js/main.js'></script>
     <script src='./js/movies.js'></script>
     <script src='./js/shows.js'></script>
+    <script src='./js/questions.js'></script>
     <script src='./poem/js/poem_base.js'></script>
     <script src='./book/js/book_data.js'></script>
     <script src='./short-story/js/short_story_data.js'></script>
@@ -55,10 +56,11 @@
                 <option value="book">Book</option>
                 <option value="movie">Movie</option>
                 <option value="show">TV Show</option>
+                <option value="question">Question</option>
             </select>
 
-            <button onclick="new_album()" class="col-12 bold" id="rand-button">New Album</button>
-            <a onclick="document.body.classList.toggle('night')" class="col-12 blue my-sm text-r">night mode</a>
+            <button onclick="new_album()" class="col-6 bold no-wrap" id="rand-button">New Album</button>
+            <button onclick="document.body.classList.toggle('night')" class="col-6 bold no-wrap" id="rand-button">night</button>
         </div>
 
         <div id="content" class="col-6"></div>
