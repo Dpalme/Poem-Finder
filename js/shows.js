@@ -1,8 +1,6 @@
 class Show {
     constructor(name) {
-        this.name = name;
-        this.uri = "./search/?q=" + this.name.replace(' ', '+').replace("'", '%27').replace(":", '%3A') + "+tv+show";
-        shows.push(this);
+        new RandomObject("show", name, "", "", "./search/?q=" + name.replace(' ', '+').replace("'", '%27').replace(":", '%3A') + "+tv+show");
     }
 }
 

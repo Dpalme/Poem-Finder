@@ -1,13 +1,6 @@
 class Song {
     constructor(uri, name, artist) {
-        this.name = name;
-        this.artist = artist;
-        this.uri = uri;
-        songs.push(this);
-    }
-
-    get_embeded() {
-        return "https://open.spotify.com/embed/track/" + this.uri;
+        new RandomObject("song", name, artist, "", "https://open.spotify.com/embed/track/" + uri);
     }
 }
 

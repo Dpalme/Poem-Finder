@@ -1,9 +1,6 @@
 class Book {
     constructor(name, author, extract) {
-        this.name = name;
-        this.author = author;
-        this.extract = extract;
-        books.push(this);
+        new RandomObject("book", name, author, extract)
     }
 }
 

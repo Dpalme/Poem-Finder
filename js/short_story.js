@@ -1,9 +1,6 @@
 class Cuento {
     constructor(name, author, extract) {
-        this.name = name;
-        this.author = author;
-        this.extract = extract;
-        cuentos.push(this);
+        new RandomObject("cuento", name, author, extract);
     }
 }
 
