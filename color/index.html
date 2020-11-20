@@ -1,0 +1,42 @@
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+
+    <!-- Primary Meta Tags -->
+    <title>Color</title>
+    <meta name='title' content=''>
+    <meta name='description' content=''>
+
+    <!-- Open Graph / Facebook -->
+    <meta property='og:type' content='website'>
+    <meta property='og:url' content=''>
+    <meta property='og:title' content=''>
+    <meta property='og:description' content=''>
+    <meta property='og:image' content=''>
+
+    <!-- Twitter -->
+    <meta property='twitter:card' content='summary_large_image'>
+    <meta property='og:url' content=''>
+    <meta property='twitter:title' content=''>
+    <meta property='twitter:description' content=''>
+    <meta property='twitter:image' content=''>
+
+    <!-- CSS -->
+    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/normalize.css'>
+    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/peoria-0-4-0.css'>
+
+    <!-- JS -->
+    <script src='https://dpalmer.in/Peoria/peoria.js'></script>
+</head>
+
+<body>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.body.style = "background-color: #" + urlParams.get('c');
+    </script>
+</body>
+
+</html>

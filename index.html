@@ -33,18 +33,19 @@
     <!-- JS -->
     <script src='https://dpalmer.in/Peoria/peoria_2.js'></script>
     <script src='./js/main.js'></script>
-    <script src='./js/movies.js'></script>
-    <script src='./js/shows.js'></script>
-    <script src='./js/questions.js'></script>
+    <script src='./js/movie.js'></script>
+    <script src='./js/show.js'></script>
+    <script src='./js/question.js'></script>
     <script src='./js/poem.js'></script>
     <script src='./js/book.js'></script>
     <script src='./js/short_story.js'></script>
     <script src='./js/album.js'></script>
-    <script src='./js/tracks.js'></script>
+    <script src='./js/song.js'></script>
+    <script src='./js/color.js'></script>
 </head>
 
 <body class="night">
-    <div class="container mt-lg mb-1">
+    <div class="container mt-lg">
         <div class="col-6" id="info-section">
             <h1 class="col-12 text-r">Random</h1>
             <select class="col-12 my-sm title-4 h-lg" id="random-t"
@@ -57,9 +58,10 @@
                 <option value="movie">Movie</option>
                 <option value="show">TV Show</option>
                 <option value="question">Question</option>
+                <option value="color">Color</option>
             </select>
 
-            <button onclick="new_album()" class="col-6 bold no-wrap" id="rand-button">New Album</button>
+            <button class="col-6 bold no-wrap" id="rand-button">New Album</button>
             <button onclick="document.body.classList.toggle('night')" class="col-6 bold no-wrap" id="rand-button">night</button>
         </div>
 
