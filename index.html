@@ -42,9 +42,15 @@
     <script src='./js/album.js'></script>
     <script src='./js/song.js'></script>
     <script src='./js/color.js'></script>
+
+    <style>
+        :root {
+            --green: #1E4C42;
+        }
+    </style>
 </head>
 
-<body class="night">
+<body class="green-bg night">
     <div class="container mt-lg">
         <div class="col-6" id="info-section">
             <h1 class="col-12 text-r">Random</h1>
@@ -62,7 +68,7 @@
             </select>
 
             <button class="col-6 bold no-wrap" id="rand-button">New Album</button>
-            <button onclick="document.body.classList.toggle('night')" class="col-6 bold no-wrap" id="rand-button">night</button>
+            <button onclick="document.body.classList.toggle('green-bg')" class="col-6 bold no-wrap" id="rand-button">night</button>
         </div>
 
         <div id="content" class="col-6"></div>

@@ -27,7 +27,7 @@ window.onload = function start() {
         allowtransparency: "true",
         allow: "encrypted-media",
         width: window.innerWidth < window.innerHeight ? parseInt(window.innerWidth * .775) + "px" : "440px",
-        height: "520px"
+        height: "680px"
     });
     text_tag = objectToContent({
         type: "pre",
