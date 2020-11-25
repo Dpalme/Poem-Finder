@@ -99,14 +99,14 @@ function set_data(object) {
     }
 }
 
-function set_with_id(id){
-    set_data(get_from_id(id));
-}
-
 function get_from_id(id){
-    objects.forEach(object => {
-        if (object.id == id) return object;
-    })
+    var keys = Object.keys(objects);
+    for(i = 0; i < keys.length; i++){
+        object = objects[keys[i]];
+        if (object.id == id) {
+            return object;
+        }
+    }
 }
 
 function share(id){
