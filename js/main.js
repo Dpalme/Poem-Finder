@@ -96,6 +96,7 @@ function set_data(object) {
         external_tag.innerText = "";
     } else if (object.external != "") {
         external_tag.setAttribute("href", object.external);
+        external_tag.innerText = "Spotify";
     } else {
         external_tag.setAttribute("href", "https://dpalmer.in/Random/?o=" + object.id);
         external_tag.innerText = "link to this"
