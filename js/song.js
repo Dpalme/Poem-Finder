@@ -1,6 +1,6 @@
 class Song {
     constructor(uri, name, artist) {
-        new RandomObject("song", name, artist, "", "https://open.spotify.com/embed/track/" + uri);
+        new RandomObject("song", name, artist, "", "https://open.spotify.com/embed/track/" + uri, "spotify:track:" + uri);
     }
 }
 
