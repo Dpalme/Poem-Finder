@@ -91,11 +91,11 @@ function set_data(object) {
     } else {
         if (navigator.share) {
             external_tag.setAttribute("href", "javascript:share(" + object.id + ")");
-          } else {
+            external_tag.innerText = "Share This"
+        } else {
             external_tag.setAttribute("href", "./?o=" + object.id);
-          }
-        external_tag.setAttribute("href", "./?o=" + object.id);
-        external_tag.innerText = "Share This"
+            external_tag.innerText = "Link To This"
+        }
     }
 }
 
