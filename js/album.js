@@ -1,9 +1,10 @@
 class Album {
     constructor(uri, name, artist) {
-        new RandomObject("album", name, artist, "", "https://open.spotify.com/embed/album/" + uri, "spotify:album:" + uri);
+        new RandomObject("album", name, artist, "", "https://open.spotify.com/embed/album/" + uri, "spotify:album:" + uri + ":play");
     }
 }
 
+new Album("4IFpj2jyRcugt1yzH82m3E", "SYRE", "Jaden");
 new Album("7MtrCHFK57syVaitrSwSAY", "Silver Rose", "Silver Rose");
 new Album("6zmDdgPRKrvYwXk8eWv3iK", "6 Feet Beneath The Moon", "King Krule");
 new Album("6UsJMFZbhzvWrTDX7vr3pr", "Almanueva", "The Guadaloops");
