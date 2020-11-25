@@ -52,14 +52,6 @@ window.onload = function start() {
     url_object();
 }
 
-function set_with_id(id){
-    objects.forEach(object => {
-        if (object.id == id) {
-            set_data(object);
-        }
-    })
-}
-
 function set_data(object) {
     index_tag.innerHTML = "";
 
@@ -97,9 +89,33 @@ function set_data(object) {
         external_tag.setAttribute("href", object.external);
         external_tag.innerText = "Spotify";
     } else {
+        if (navigator.share) {
+            external_tag.setAttribute("href", "javascript:share(" + object.id + ")");
+          } else {
+            external_tag.setAttribute("href", "./?o=" + object.id);
+          }
         external_tag.setAttribute("href", "./?o=" + object.id);
-        external_tag.innerText = "link to this"
+        external_tag.innerText = "Share This"
     }
+}
+
+function set_with_id(id){
+    set_data(get_from_id(id));
+}
+
+function get_from_id(id){
+    objects.forEach(object => {
+        if (object.id == id) return object;
+    })
+}
+
+function share(id){
+    object = get_from_id(id);
+    navigator.share({
+        title: object.title,
+        text: object.author,
+        url: './?o=' + object.id
+    })
 }
 
 function clear_data() {
