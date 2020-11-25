@@ -92,7 +92,9 @@ function set_data(object) {
         iframe_tag.classList.add("d-none")
     }
 
-    if (object.external != "") {
+    if (object.external == "./") {
+        external_tag.innerText = "";
+    } else if (object.external != "") {
         external_tag.setAttribute("href", object.external);
     } else {
         external_tag.setAttribute("href", "https://dpalmer.in/Random/o=" + object.id);
@@ -101,7 +103,7 @@ function set_data(object) {
 }
 
 function clear_data() {
-    set_data({title: "", author: "", text: "", url: "", external: ""});
+    set_data({title: "", author: "", text: "", url: "", external: "./"});
     index_tag.innerHTML = "";
 }
 
@@ -122,11 +124,9 @@ function change_type(new_type) {
     clear_data();
     var rButton = document.getElementById('rand-button');
     rButton.setAttribute("onclick", "change_object('" + new_type + "')");
-    rButton.innerText = new_type != "cuento" ? "New " + new_type : "new short story";
 
     var aButton = document.getElementById('all-button');
     aButton.setAttribute("onclick", "all_objects('" + new_type + "')");
-    aButton.innerText = new_type != "cuento" ? "All " + new_type + "s" : "all short stories";
 
     change_object(new_type);
 }
