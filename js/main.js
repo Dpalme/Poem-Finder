@@ -49,6 +49,10 @@ window.onload = function start() {
         type: "div",
         class: "col-12"
     })
+
+    if(navigator.share) {
+        document.getElementById("share-button").classList.add("d-none")
+    }
     url_object();
 }
 
@@ -83,19 +87,17 @@ function set_data(object) {
         iframe_tag.classList.add("d-none")
     }
 
-    if (object.external == "./") {
-        external_tag.innerText = "";
-    } else if (object.external != "") {
+    if (object.external != "") {
+        external_tag.classList.remove("d-none")
         external_tag.setAttribute("href", object.external);
         external_tag.innerText = "Spotify";
     } else {
-        if (navigator.share) {
-            external_tag.setAttribute("href", "javascript:share(" + object.id + ")");
-            external_tag.innerText = "Share This"
-        } else {
-            external_tag.setAttribute("href", "./?o=" + object.id);
-            external_tag.innerText = "Link To This"
-        }
+        iframe_tag.classList.add("d-none")
+        external_tag.innerText = "";
+    }
+
+    if (navigator.share) {
+        document.getElementById("share-button").setAttribute("href", "javascript:share(" + object.id + ")");
     }
 }
 
