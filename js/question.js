@@ -1,6 +1,6 @@
 class Question {
-    constructor(name) {
-        new RandomObject(name, "", "", "", "");
+    constructor(question) {
+        new RandomObject("question", "", "", question, "", "");
     }
 }
 

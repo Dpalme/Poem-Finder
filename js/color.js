@@ -1,6 +1,6 @@
 class Color {
     constructor (value) {
-        new RandomObject("color", "", "#" + value, "", "./color/?c=" + value);
+        new RandomObject("color", "#" + value, "", "", "./color/?c=" + value);
     }
 }
 

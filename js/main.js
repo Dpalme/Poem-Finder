@@ -93,10 +93,10 @@ function set_data(object) {
     }
 
     if (object.external != "") {
-        external_tag.classList.remove("d-none");
         external_tag.setAttribute("href", object.external);
     } else {
-        external_tag.classList.add("d-none")
+        external_tag.setAttribute("href", "https://dpalmer.in/Random/o=" + object.id);
+        external_tag.innerText = "link to this"
     }
 }
 
