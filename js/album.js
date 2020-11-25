@@ -1,6 +1,6 @@
 class Album {
     constructor(uri, name, artist) {
-        new RandomObject("album", name, artist, "", "https://open.spotify.com/embed/album/" + uri)
+        new RandomObject("album", name, artist, "", "https://open.spotify.com/embed/album/" + uri, "spotify:album:" + uri);
     }
 }
 

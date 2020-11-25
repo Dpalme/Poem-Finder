@@ -1,25 +1,31 @@
 let objects = [];
 
 class RandomObject {
-    constructor(type, title = "", author = "", text = "", url = "") {
+    constructor(type, title = "", author = "", text = "", url = "", external = "") {
         this.type = type;
         this.title = title;
         this.author = author;
         this.text = text;
         this.url = url;
+        this.external = external;
         objects.push(this);
     }
 }
 
 window.onload = function start() {
-    author_tag = objectToContent({
+    title_tag = objectToContent({
         type: "h2",
         class: "col-12"
     });
-    title_tag = objectToContent({
+    author_tag = objectToContent({
         type: "h4",
-        class: "col-12 my-sm"
+        class: "col-12 lh-1"
     });
+    external_tag = objectToContent({
+        type: "a",
+        class: "d-block blue col-12 lh-lg",
+        innerText: "open"
+    })
     iframe_tag = objectToContent({
         type: "iframe",
         class: "card p-n col-12",
@@ -27,7 +33,7 @@ window.onload = function start() {
         allowtransparency: "true",
         allow: "encrypted-media",
         width: window.innerWidth < window.innerHeight ? parseInt(window.innerWidth * .775) + "px" : "440px",
-        height: "680px"
+        height: "512px"
     });
     text_tag = objectToContent({
         type: "pre",
@@ -44,23 +50,33 @@ function set_data(object) {
     } else {
         title_tag.classList.add("d-none")
     }
+
     if (object.author != "") {
         author_tag.classList.remove("d-none");
         author_tag.innerText = object.author;
     } else {
         author_tag.classList.add("d-none")
     }
+
     if (object.text != "") {
         text_tag.classList.remove("d-none");
         text_tag.innerText = object.text;
     } else {
         text_tag.classList.add("d-none")
     }
+
     if (object.url != "") {
         iframe_tag.classList.remove("d-none");
         iframe_tag.setAttribute("src", object.url);
     } else {
         iframe_tag.classList.add("d-none")
+    }
+
+    if (object.external != "") {
+        external_tag.classList.remove("d-none");
+        external_tag.setAttribute("href", object.external);
+    } else {
+        external_tag.classList.add("d-none")
     }
 }
 
