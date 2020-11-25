@@ -41,7 +41,6 @@
     <script src='./js/album.js'></script>
     <script src='./js/song.js'></script>
     <script src='./js/color.js'></script>
-
     <style>
         :root {
             --green: #1E4C42;
@@ -52,8 +51,8 @@
 <body class="night">
     <div class="container mt-lg">
         <div class="col-6" id="info-section">
-            <h1 class="col-12 text-r">Random</h1>
-            <select class="col-12 my-sm title-4 h-lg" id="random-t"
+            <h1 class="col-12 text-r mb">Random</h1>
+            <select class="col-12 mb-sm title-4 h-lg" id="random-t"
                 onchange="change_type(document.getElementById('random-t').value)">
                 <option value="album">Album</option>
                 <option value="poem">Poem</option>
@@ -66,13 +65,15 @@
                 <option value="color">Color</option>
             </select>
 
-            <button class="col-6 bold no-wrap" id="rand-button">New Album</button>
-            <button onclick="document.body.classList.toggle('green-bg')" class="col-6 bold no-wrap" id="rand-button">night</button>
+            <button class="col-6 bold no-wrap mb-sm" id="rand-button">New Album</button>
+            <button onclick="document.body.classList.toggle('green-bg')" class="col-6 bold no-wrap mb-sm" id="rand-button">night</button>
+            <button class="col-12 bold no-wrap" id="all-button">All Albums</button>
         </div>
 
         <div id="content" class="col-6"></div>
         <a onclick="window.scrollTo(0, 0);" class="col-12 mob-show blue mb-sm">Top</a>
     </div>
+    <script src="./js/url_object.js" async="false"></script>
 </body>
 
 </html>
