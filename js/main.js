@@ -97,7 +97,7 @@ function set_data(object) {
     } else if (object.external != "") {
         external_tag.setAttribute("href", object.external);
     } else {
-        external_tag.setAttribute("href", "https://dpalmer.in/Random/o=" + object.id);
+        external_tag.setAttribute("href", "https://dpalmer.in/Random/?o=" + object.id);
         external_tag.innerText = "link to this"
     }
 }
