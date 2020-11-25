@@ -56,7 +56,6 @@ function set_with_id(id){
     objects.forEach(object => {
         if (object.id == id) {
             set_data(object);
-            console.log(object);
         }
     })
 }
@@ -98,7 +97,7 @@ function set_data(object) {
         external_tag.setAttribute("href", object.external);
         external_tag.innerText = "Spotify";
     } else {
-        external_tag.setAttribute("href", "https://dpalmer.in/Random/?o=" + object.id);
+        external_tag.setAttribute("href", "./?o=" + object.id);
         external_tag.innerText = "link to this"
     }
 }
@@ -111,7 +110,7 @@ function clear_data() {
 function change_object(type) {
     var object = objects[Math.floor(Math.random() * objects.length)];
     while (object.type != type) object = objects[Math.floor(Math.random() * objects.length)];
-    set_data(object);
+    window.location = "./?o=" + object.id;
 }
 
 function all_objects(type) {
@@ -128,6 +127,4 @@ function change_type(new_type) {
 
     var aButton = document.getElementById('all-button');
     aButton.setAttribute("onclick", "all_objects('" + new_type + "')");
-
-    change_object(new_type);
 }

@@ -53,7 +53,7 @@
         <div class="col-6" id="info-section">
             <h1 class="col-12 text-r mb">Random</h1>
             <select class="col-12 mb-sm title-4 h-lg" id="random-t"
-                onchange="change_type(document.getElementById('random-t').value)">
+                onchange="change_type(document.getElementById('random-t').value); change_object(document.getElementById('random-t').value)">
                 <option value="album">Album</option>
                 <option value="poem">Poem</option>
                 <option value="song">Song</option>

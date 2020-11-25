@@ -11,5 +11,6 @@ function url_object(){
         })
     } else {
         change_type("album");
+        change_object("album")
     }
 }
