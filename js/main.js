@@ -51,7 +51,7 @@ window.onload = function start() {
     })
 
     if(navigator.share) {
-        document.getElementById("share-button").classList.add("d-none")
+        document.getElementById("share-button").classList.remove("d-none")
     }
     url_object();
 }
