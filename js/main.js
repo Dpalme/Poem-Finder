@@ -50,7 +50,7 @@ window.onload = function start() {
         class: "col-12"
     })
 
-    if (navigator.share) {
+    if (navigator.canShare()) {
         document.getElementById("share-button").classList.remove("d-none")
     }
     url_object();
@@ -96,8 +96,19 @@ function set_data(object) {
         external_tag.innerText = "";
     }
 
-    if (navigator.canShare) {
-        document.getElementById("share-button").setAttribute("href", "javascript:share(" + object.id + ")");
+    if (navigator.canShare()) {
+        document.getElementById("share-button").addEventListener('click', () => {
+            navigator.share({
+                    title: object.title,
+                    text: object.author,
+                    url: './?o=' + object.id
+                }).then(() => {
+                    console.log('Thanks for sharing!');
+                })
+                .catch(err => {
+                    console.log(`Couldn't share because of`, err.message);
+                });
+        });
     }
 }
 
@@ -109,15 +120,6 @@ function get_from_id(id) {
             return object;
         }
     }
-}
-
-function share(id) {
-    object = get_from_id(id);
-    navigator.share({
-        title: object.title,
-        text: object.author,
-        url: './?o=' + object.id
-    })
 }
 
 function clear_data() {
