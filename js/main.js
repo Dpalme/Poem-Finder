@@ -50,7 +50,7 @@ window.onload = function start() {
         class: "col-12"
     })
 
-    if(navigator.share) {
+    if (navigator.share) {
         document.getElementById("share-button").classList.remove("d-none")
     }
     url_object();
@@ -101,9 +101,9 @@ function set_data(object) {
     }
 }
 
-function get_from_id(id){
+function get_from_id(id) {
     var keys = Object.keys(objects);
-    for(i = 0; i < keys.length; i++){
+    for (i = 0; i < keys.length; i++) {
         object = objects[keys[i]];
         if (object.id == id) {
             return object;
@@ -111,7 +111,7 @@ function get_from_id(id){
     }
 }
 
-function share(id){
+function share(id) {
     object = get_from_id(id);
     navigator.share({
         title: object.title,
@@ -121,7 +121,13 @@ function share(id){
 }
 
 function clear_data() {
-    set_data({title: "", author: "", text: "", url: "", external: "./"});
+    set_data({
+        title: "",
+        author: "",
+        text: "",
+        url: "",
+        external: "./"
+    });
     index_tag.innerHTML = "";
 }
 
