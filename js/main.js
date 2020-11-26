@@ -99,8 +99,8 @@ function set_data(object) {
     if (navigator.share) {
         document.getElementById("share-button").addEventListener('click', () => {
             navigator.share({
-                    title: object.title.toString(),
-                    text: object.author.toString(),
+                    title: object.title.toString() + " - " + object.author.toString(),
+                    text: object.title.toString() + " - " + object.author.toString(),
                     url: './?o=' + object.id.toString()
                 }).then(() => {
                     console.log('Thanks for sharing!');
