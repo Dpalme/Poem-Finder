@@ -15,7 +15,7 @@ class RandomObject {
 }
 
 RandomObject.prototype.toString = function objToString() {
-    return "<a class='lh-lg col-12 blue' href='javascript:set_with_id(" + this.id + ")'>" + this.title + " - " + this.author + "</a>";
+    return "<a class='lh-lg col-12 blue' href='javascript:set_data(get_from_id(" + this.id + "))'>" + this.title + " - " + this.author + "</a>";
 }
 
 window.onload = function start() {
