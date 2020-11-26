@@ -50,7 +50,7 @@ window.onload = function start() {
         class: "col-12"
     })
 
-    if (navigator.canShare()) {
+    if (navigator.share) {
         document.getElementById("share-button").classList.remove("d-none")
     }
     url_object();
@@ -96,7 +96,7 @@ function set_data(object) {
         external_tag.innerText = "";
     }
 
-    if (navigator.canShare()) {
+    if (navigator.share) {
         document.getElementById("share-button").addEventListener('click', () => {
             navigator.share({
                     title: object.title,
