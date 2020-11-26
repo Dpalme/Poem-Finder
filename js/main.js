@@ -99,9 +99,9 @@ function set_data(object) {
     if (navigator.share) {
         document.getElementById("share-button").addEventListener('click', () => {
             navigator.share({
-                    title: object.title,
-                    text: object.author,
-                    url: './?o=' + object.id
+                    title: object.title.toString(),
+                    text: object.author.toString(),
+                    url: './?o=' + object.id.toString()
                 }).then(() => {
                     console.log('Thanks for sharing!');
                 })
