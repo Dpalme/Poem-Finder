@@ -128,7 +128,7 @@ function clear_data() {
         author: "",
         text: "",
         url: "",
-        external: "./"
+        external: ""
     });
     index_tag.innerHTML = "";
 }
