@@ -92,11 +92,11 @@ function set_data(object) {
         external_tag.setAttribute("href", object.external);
         external_tag.innerText = "Spotify";
     } else {
-        iframe_tag.classList.add("d-none")
+        external_tag.classList.add("d-none")
         external_tag.innerText = "";
     }
 
-    if (navigator.share) {
+    if (navigator.canShare) {
         document.getElementById("share-button").setAttribute("href", "javascript:share(" + object.id + ")");
     }
 }

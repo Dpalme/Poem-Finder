@@ -27,7 +27,7 @@
 
     <!-- CSS -->
     <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/normalize.css'>
-    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/peoria-0-4-3.css'>
+    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/peoria-0-4-4.css'>
 
     <!-- JS -->
     <script src='https://dpalmer.in/Peoria/peoria_2.js'></script>
@@ -52,21 +52,21 @@
     <div class="container mt-lg">
         <div class="col-6" id="info-section">
             <h1 class="col-12 text-r mb">Random</h1>
-            <select class="col-12 mb-sm title-4 h-lg" id="random-t"
+            <select class="col-12 mb-sm h2 h-lg" style="text-transform: uppercase;" id="random-t" dir="rtl"
                 onchange="change_type(document.getElementById('random-t').value); change_object(document.getElementById('random-t').value)">
-                <option value="album">Album</option>
-                <option value="poem">Poem</option>
-                <option value="song">Song</option>
-                <option value="cuento">Short Story</option>
-                <option value="book">Book</option>
-                <option value="movie">Movie</option>
-                <option value="show">TV Show</option>
-                <option value="question">Question</option>
-                <option value="color">Color</option>
+                <option class="h5" value="album">Album</option>
+                <option class="h5" value="poem">Poem</option>
+                <option class="h5" value="song">Song</option>
+                <option class="h5" value="cuento">Short Story</option>
+                <option class="h5" value="book">Book</option>
+                <option class="h5" value="movie">Movie</option>
+                <option class="h5" value="show">TV Show</option>
+                <option class="h5" value="question">Question</option>
+                <option class="h5" value="color">Color</option>
             </select>
 
-            <button class="col-6 bold p-n mb-sm" id="rand-button">New</button>
-            <button class="col-6 bold p-n mb-sm" id="all-button">All</button>
+            <button class="col-h bold p-n mb-sm" id="rand-button">New</button>
+            <button class="col-h bold p-n mb-sm" id="all-button">All</button>
             <button class="col-12 bold p-n mb-sm d-none" id="share-button">Share</button>
         </div>
 
