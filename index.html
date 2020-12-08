@@ -50,27 +50,29 @@
 
 <body class="night">
     <div class="container mt-lg">
-        <div class="col-6" id="info-section">
-            <h1 class="col-12 title-4 mb">Random</h1>
-            <select class="col-12 mb-sm h2 h-lg" style="text-transform: uppercase;" id="random-t"
-                onchange="change_type(document.getElementById('random-t').value); change_object(document.getElementById('random-t').value)">
-                <option class="h5" value="album">Album</option>
-                <option class="h5" value="poem">Poem</option>
-                <option class="h5" value="song">Song</option>
-                <option class="h5" value="cuento">Short Story</option>
-                <option class="h5" value="book">Book</option>
-                <option class="h5" value="movie">Movie</option>
-                <option class="h5" value="show">TV Show</option>
-                <option class="h5" value="question">Question</option>
-                <option class="h5" value="color">Color</option>
-            </select>
+        <div id="info-section">
+            <h1 class="col-6 title-4 mb text-c">Random</h1>
+            <div class="col-6">
+                <select class="col-12 mb-sm  h-1 lh-1" style="text-transform: uppercase;" id="random-t"
+                    onchange="change_type(document.getElementById('random-t').value); change_object(document.getElementById('random-t').value)">
+                    <option class="h5" value="album">Album</option>
+                    <option class="h5" value="poem">Poem</option>
+                    <option class="h5" value="song">Song</option>
+                    <option class="h5" value="cuento">Short Story</option>
+                    <option class="h5" value="book">Book</option>
+                    <option class="h5" value="movie">Movie</option>
+                    <option class="h5" value="show">TV Show</option>
+                    <option class="h5" value="question">Question</option>
+                    <option class="h5" value="color">Color</option>
+                </select>
 
-            <button class="col-h bold p-n mb-sm" id="rand-button">New</button>
-            <button class="col-h bold p-n mb-sm" id="all-button">All</button>
-            <button class="col-12 bold p-n mb-sm d-none" id="share-button">Share</button>
+                <button class="col-h bold p-n mb-sm h-1 lh-1" id="rand-button">New</button>
+                <button class="col-h bold p-n mb-sm h-1 lh-1" id="all-button">All</button>
+                <button class="col-f bold p-n mb-sm h-1 lh-1 d-none" id="share-button">Share</button>
+            </div>
         </div>
 
-        <div id="content" class="col-6"></div>
+        <div id="content" class="col-12"></div>
         <a onclick="window.scrollTo(0, 0);" class="col-12 mob-show blue mb-sm">Top</a>
     </div>
     <script src="./js/url_object.js" async="false"></script>

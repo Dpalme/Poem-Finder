@@ -15,21 +15,21 @@ class RandomObject {
 }
 
 RandomObject.prototype.toString = function objToString() {
-    return "<a class='lh-lg col-12 blue' href='javascript:set_data(get_from_id(" + this.id + "))'>" + this.title + " - " + this.author + "</a>";
+    return "<a class='lh-lg col-6 blue' href='javascript:set_data(get_from_id(" + this.id + "))'>" + this.title + " - " + this.author + "</a>";
 }
 
 window.onload = function start() {
     title_tag = objectToContent({
         type: "h2",
-        class: "col-12"
+        class: "col-6 mb-sm"
     });
     author_tag = objectToContent({
         type: "h4",
-        class: "col-12 lh-1"
+        class: "col-6 mb-sm"
     });
     external_tag = objectToContent({
         type: "a",
-        class: "d-block blue col-12 lh-lg",
+        class: "d-block blue col-12 my-sm",
         innerText: "open"
     })
     iframe_tag = objectToContent({
