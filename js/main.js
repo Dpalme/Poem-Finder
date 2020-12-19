@@ -19,32 +19,42 @@ RandomObject.prototype.toString = function objToString() {
 }
 
 window.onload = function start() {
-    title_tag = objectToContent({
-        type: "h2",
-        class: "col-6 mb-sm"
-    });
-    author_tag = objectToContent({
+    title_tag = object({
         type: "h4",
-        class: "col-6 mb-sm"
+        class: "col-12 text-r my-n lh-1"
     });
-    external_tag = objectToContent({
+    author_tag = object({
+        type: "h4",
+        class: "col-12 greyed-out text-r"
+    });
+    objectToContent({
+        type: 'div',
+        class: 'col-6',
+        children: [title_tag, author_tag]
+    })
+    external_tag = object({
         type: "a",
-        class: "d-block blue col-12 my-sm",
+        class: "d-block blue col-12 h4 mt-n lh-1",
         innerText: "open"
     })
-    iframe_tag = objectToContent({
+    iframe_tag = object({
         type: "iframe",
-        class: "card p-n col-12",
+        class: "card p-n col-12 my-n",
         frameborder: "0",
         allowtransparency: "true",
         allow: "encrypted-media",
         width: window.innerWidth < window.innerHeight ? parseInt(window.innerWidth * .775) + "px" : "440px",
         height: "512px"
     });
-    text_tag = objectToContent({
+    text_tag = object({
         type: "pre",
-        class: "col-12 back-2 mid-grey-bg lh-1"
+        class: "col-12 my-n back-2 mid-grey-bg lh-1"
     });
+    objectToContent({
+        type: 'div',
+        class: 'col-6',
+        children: [external_tag, iframe_tag, text_tag]
+    })
     index_tag = objectToContent({
         type: "div",
         class: "col-12"

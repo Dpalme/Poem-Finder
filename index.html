@@ -27,7 +27,7 @@
 
     <!-- CSS -->
     <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/normalize.css'>
-    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/peoria-0-4-4.css'>
+    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/peoria-0-5-0.css'>
 
     <!-- JS -->
     <script src='https://dpalmer.in/Peoria/peoria_2.js'></script>
@@ -49,11 +49,11 @@
 </head>
 
 <body class="night">
-    <div class="container mt-lg">
+    <div class="container mt-sm mb-n">
         <div id="info-section">
-            <h1 class="col-6 title-4 mb text-c">Random</h1>
-            <div class="col-6">
-                <select class="col-12 mb-sm  h-1 lh-1" style="text-transform: uppercase;" id="random-t"
+            <h1 class="col-6 title-2 text-r my-n">Random</h1>
+            <div class="col-6 my-n">
+                <select class="col-12 h-1 lh-1" style="text-transform: uppercase;" id="random-t"
                     onchange="change_type(document.getElementById('random-t').value); change_object(document.getElementById('random-t').value)">
                     <option class="h5" value="album">Album</option>
                     <option class="h5" value="poem">Poem</option>
@@ -65,15 +65,16 @@
                     <option class="h5" value="question">Question</option>
                     <option class="h5" value="color">Color</option>
                 </select>
-
-                <button class="col-h bold p-n mb-sm h-1 lh-1" id="rand-button">New</button>
-                <button class="col-h bold p-n mb-sm h-1 lh-1" id="all-button">All</button>
-                <button class="col-f bold p-n mb-sm h-1 lh-1 d-none" id="share-button">Share</button>
+                <div class="col-12 my-n">
+                    <button class="col-h h-1 lh-1 mt-n ml-n float-l" id="rand-button">New</button>
+                    <button class="col-h h-1 lh-1 mt-n mr-n float-r" id="all-button">All</button>
+                    <button class="col-f h-1 lh-1 d-none" id="share-button">Share</button>
+                </div>
             </div>
         </div>
 
-        <div id="content" class="col-12"></div>
-        <a onclick="window.scrollTo(0, 0);" class="col-12 mob-show blue mb-sm">Top</a>
+        <div id="content" class="col-12 my-n"></div>
+        <a onclick="window.scrollTo(0, 0);" class="col-12 mob-show blue">Top</a>
     </div>
     <script src="./js/url_object.js" async="false"></script>
 </body>
