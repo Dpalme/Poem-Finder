@@ -48,7 +48,7 @@ window.onload = function start() {
     });
     text_tag = object({
         type: "pre",
-        class: "col-12 my-n back-2 mid-grey-bg lh-1"
+        class: "body-text col-12 my-n back-2 lh-1"
     });
     objectToContent({
         type: 'div',
