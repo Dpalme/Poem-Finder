@@ -15,17 +15,17 @@ class RandomObject {
 }
 
 RandomObject.prototype.toString = function objToString() {
-    return "<a class='lh-lg col-6 blue' href='javascript:set_data(get_from_id(" + this.id + "))'>" + this.title + " - " + this.author + "</a>";
+    return "<a class='lh-lg col-12 blue' href='javascript:set_data(get_from_id(" + this.id + "))'>" + this.author + " - " + this.title + "</a>";
 }
 
 window.onload = function start() {
     title_tag = object({
         type: "h4",
-        class: "col-12 text-r my-n lh-1"
+        class: "text-r my-n lh-1"
     });
     author_tag = object({
         type: "h4",
-        class: "col-12 greyed-out text-r"
+        class: "greyed-out text-r"
     });
     objectToContent({
         type: 'div',
@@ -48,7 +48,8 @@ window.onload = function start() {
     });
     text_tag = object({
         type: "pre",
-        class: "body-text col-12 my-n back-2 lh-1"
+        class: "body-text w-f my-n mr-lg back-2 lh-1",
+        style: "box-sizing: border-box;"
     });
     objectToContent({
         type: 'div',
@@ -57,7 +58,7 @@ window.onload = function start() {
     })
     index_tag = objectToContent({
         type: "div",
-        class: "col-12"
+        class: "grid col-12"
     })
 
     if (navigator.share) {
@@ -109,12 +110,12 @@ function set_data(object) {
     if (navigator.share) {
         document.getElementById("share-button").addEventListener('click', () => {
             navigator.share({
-                    title: object.title.toString() + " - " + object.author.toString(),
-                    text: object.title.toString() + " - " + object.author.toString(),
-                    url: './?o=' + object.id.toString()
-                }).then(() => {
-                    console.log('Thanks for sharing!');
-                })
+                title: object.title.toString() + " - " + object.author.toString(),
+                text: object.title.toString() + " - " + object.author.toString(),
+                url: './?o=' + object.id.toString()
+            }).then(() => {
+                console.log('Thanks for sharing!');
+            })
                 .catch(err => {
                     console.log(`Couldn't share because of`, err.message);
                 });
@@ -144,14 +145,14 @@ function clear_data() {
 }
 
 function change_object(type) {
-    var object = objects[Math.floor(Math.random() * objects.length)];
+    var object = [Math.floor(Math.random() * objects.length)];
     while (object.type != type) object = objects[Math.floor(Math.random() * objects.length)];
     window.location = "./?o=" + object.id;
 }
 
 function all_objects(type) {
     clear_data();
-    objects.forEach(object => {
+    objects.sort((a, b) => a.author.codePointAt(0) - b.author.codePointAt(0)).forEach(object => {
         if (object.type == type) index_tag.innerHTML += object + "\n"
     });
 }

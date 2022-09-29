@@ -27,7 +27,7 @@
 
     <!-- CSS -->
     <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/normalize.css'>
-    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/peoria-0-5-0.css'>
+    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/peoria-0-6-2.min.css'>
     <style>
         :root {
             --green: #1E4C42;
@@ -62,11 +62,11 @@
 </head>
 
 <body class="night">
-    <div class="container mt-sm mb-n">
-        <div id="info-section">
-            <h1 class="col-6 title-2 text-r my-n">Random</h1>
-            <div class="col-6 my-n">
-                <select class="col-12 h-1 lh-1" style="text-transform: uppercase;" id="random-t"
+    <div class="section mt-sm mb-n">
+        <div id="info-section" class="grid container">
+            <h1 class="col-6 title-2 text-r my-sm">Random</h1>
+            <div class="col-6 my-md">
+                <select class="h-1 lh-1 mb-sm" style="text-transform: uppercase;" id="random-t"
                     onchange="change_type(document.getElementById('random-t').value); change_object(document.getElementById('random-t').value)">
                     <option class="h5" value="poem" selected>Poem</option>
                     <option class="h5" value="album">Album</option>
@@ -78,7 +78,7 @@
                     <option class="h5" value="question">Question</option>
                     <option class="h5" value="color">Color</option>
                 </select>
-                <div class="col-12 my-n">
+                <div class="my-n d-block">
                     <button class="col-h h-1 lh-1 mt-n ml-n float-l" id="rand-button">New</button>
                     <button class="col-h h-1 lh-1 mt-n mr-n float-r" id="all-button">All</button>
                     <button class="col-f h-1 lh-1 d-none" id="share-button">Share</button>
@@ -86,7 +86,7 @@
             </div>
         </div>
 
-        <div id="content" class="col-12 my-n"></div>
+        <div id="content" class="grid my-n"></div>
         <a onclick="window.scrollTo(0, 0);" class="col-12 mob-show blue">Top</a>
     </div>
     <script src="./js/url_object.js" async="false"></script>
